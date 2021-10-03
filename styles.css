@@ -1,0 +1,54 @@
+/* Шрифты */
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+body {
+	margin: 0;
+}
+
+.hello_users {
+	background-color: #161515;
+}
+
+.hello_users_header {
+	margin-left: 65px;
+	margin-right: 65px;
+    margin-top: 48px;
+}
+
+.hello_users_header button{
+	float: right;
+}
+
+.hello_users_header2  {
+	text-align: center;
+}
+
+.hello_users_header2 h1 {
+	    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 83px;
+    align-items: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin: 116px auto 0;
+    text-align: center;
+	}
+
+.hello_users_header2 p {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 42px;
+	align-items: center;
+	letter-spacing: 0.05em;
+	align-items: center;
+	color: #FFFFFF;
+	margin: 10px auto 0;
+	}
+
