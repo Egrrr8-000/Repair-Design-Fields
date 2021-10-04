@@ -1,8 +1,5 @@
 /* Шрифты */
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;0,800;1,300;1,500;1,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 * {
 	margin: 0;
@@ -32,10 +29,10 @@ body {
 }
 
 .hello_users_header2 h1 {
-	    font-family: 'PT Sans', sans-serif;
+	  font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 64px;
+    font-size: 48px;
     line-height: 83px;
     align-items: center;
     letter-spacing: 0.05em;
@@ -48,13 +45,13 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 36px;
+	font-size: 24px;
 	line-height: 42px;
 	align-items: center;
 	letter-spacing: 0.05em;
 	align-items: center;
-	color: #FFFFFF;
-	margin: 10px auto 0;
+	color: #b3b3b3;
+	margin: 10px auto 99px;
 }
 
 
@@ -74,26 +71,26 @@ body {
 
 .navigation {
 	position: absolute;
-	left: 50%;
-	bottom: 16px;
-	transform: translateX(-50%);
-	display: flex;
-	z-index: 5;
+  left: 50%;
+  top: 60%;
+  transform: translateX(-50%);
+  display: flex;
+  z-index: 5;
 }
 
 .bar {
-	height: 8px;
+	height: 16px;
 	width: 16px;
 	margin: 6px;
 	cursor: pointer;
-	background-color: red;
+	background-color: white;
 	opacity: .5;
 	border-radius: 10px;
 	transition: all .4s ease;
 }
 
 .bar:hover{
-	opacity: .8;
+	opacity: .9;
 	transform: rotate(1.1);
 }
 
@@ -103,13 +100,14 @@ input[name="r"] {
 }
 
 .slides {
-	width: 400%;
-	height: 100%;
-	display: grid;
+	width: 100%;
+  display: grid;
+  grid-template-columns: 80%;
+  justify-content: center;
 }
 
 .slide {
-	width: 25%;
+	width: 100%;
 	grid-column: 1;
 	grid-row: 1;
 	opacity: 0;
@@ -118,21 +116,35 @@ input[name="r"] {
 }
 
 .slide img {
-	height: 100%;
-	width: 100%;
+	
 }
 
 #r1:checked ~ .s1 {
 	opacity: 1;
 	z-index: 3;
+	transition: 1.5s;
+}
+#r1:checked ~ .navigation > #b1 {
+	background-color: white;
+	opacity: .7;
 }
 #r2:checked ~ .s2 {
 	opacity: 1;
 	z-index: 3;
+	transition: 1.5s;
+}
+#r2:checked ~ .navigation > #b2 {
+	background-color: white;
+	opacity: .7;
 }
 #r3:checked ~ .s3 {
 	opacity: 1;
 	z-index: 3;
+	transition: 1.5s;
+}
+#r3:checked ~ .navigation > #b3 {
+	background-color: white;
+	opacity: .7;
 }
 /*
 конец стилей для сладера
