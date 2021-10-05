@@ -352,13 +352,14 @@
 //		crossorigin="anonymous">
 
 	console.log('Привет от JavaScript!');
-	window.pageYOffset
 	const screenHeight = screen.height;
+	console.log('Высота экрана: ' + screenHeight);
 	var slides = document.getElementsByClassName('slide_r');
 	var currentSlide = 0;
 	var slideInterval = setInterval(nextSlide,5200);
 	function nextSlide() {
 		var ScrollTop = document.documentElement.scrollTop;
+		console.log('Прокрутка экрана: ' + ScrollTop);
 		if (ScrollTop <= 2000) {
 			slides[currentSlide].className = 'slide_r isnt_showing';
 	    currentSlide = (currentSlide+1)%slides.length;
