@@ -340,19 +340,39 @@
 		</div>
 	</div>
 
-</body>
+	<script
+	  src="https://code.jquery.com/jquery-3.6.0.js"
+	  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+	  crossorigin="anonymous"></script>
 
-<script>
+	<script>
+//		<script
+//		src="https://code.jquery.com/jquery-3.6.0.js">
+//		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+//		crossorigin="anonymous">
+
+	console.log('Привет от JavaScript!');
+	window.pageYOffset
+	const screenHeight = screen.height;
 	var slides = document.getElementsByClassName('slide_r');
 	var currentSlide = 0;
 	var slideInterval = setInterval(nextSlide,5200);
 	function nextSlide() {
-    slides[currentSlide].className = 'slide_r isnt_showing';
-    currentSlide = (currentSlide+1)%slides.length;
-    slides[currentSlide].checked = true;
-		slides[currentSlide].className = 'slide_r isnt_showing'
+		var ScrollTop = document.documentElement.scrollTop;
+		if (ScrollTop <= 2000) {
+			slides[currentSlide].className = 'slide_r isnt_showing';
+	    currentSlide = (currentSlide+1)%slides.length;
+	    slides[currentSlide].checked = true;
+			slides[currentSlide].className = 'slide_r isnt_showing'
+		}
 	}
+
 </script>
+</body>
 </html>
 
-<!--  // hello every body! that's a comment thx for attation -->
+<!--  // hello every body! that's a comment thx for attation
+while (window.pageYOffset <= screenHeight) {
+	var slideInterval = setInterval(nextSlide,5200);
+}
+ -->

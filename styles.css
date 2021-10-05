@@ -29,16 +29,16 @@ body {
 }
 
 .hello_users_header2 h1 {
-	  font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 83px;
-    align-items: center;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-    margin: 116px auto 0;
-    text-align: center;
+		font-family: 'Open Sans', sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 48px;
+		line-height: 83px;
+		align-items: center;
+		letter-spacing: 0.05em;
+		color: #FFFFFF;
+		margin: 8% auto 0;
+		text-align: center;
 	}
 
 .hello_users_header2 p {
@@ -71,11 +71,11 @@ body {
 
 .navigation {
 	position: absolute;
-  left: 50%;
-  top: 60%;
-  transform: translateX(-50%);
-  display: flex;
-  z-index: 5;
+	left: 50%;
+	top: 54%;
+	transform: translateX(-50%);
+	display: flex;
+	z-index: 5;
 }
 
 .bar {
