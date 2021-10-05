@@ -350,24 +350,22 @@
 //		src="https://code.jquery.com/jquery-3.6.0.js">
 //		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
 //		crossorigin="anonymous">
-
+jQuery(document).ready(function() {
 	console.log('Привет от JavaScript!');
-	const screenHeight = screen.height;
-	console.log('Высота экрана: ' + screenHeight);
+	console.log('Высота экрана: ' + screen.height);
 	var slides = document.getElementsByClassName('slide_r');
 	var currentSlide = 0;
-	var slideInterval = setInterval(nextSlide,5200);
+	var slideInterval = setInterval(nextSlide,4800);
 	function nextSlide() {
-		var ScrollTop = document.documentElement.scrollTop;
-		console.log('Прокрутка экрана: ' + ScrollTop);
-		if (ScrollTop <= 2000) {
+		console.log('Scroll: ' + $(window).scrollTop());
+    if ($(window).scrollTop() < screen.height*0.5) {
 			slides[currentSlide].className = 'slide_r isnt_showing';
-	    currentSlide = (currentSlide+1)%slides.length;
-	    slides[currentSlide].checked = true;
-			slides[currentSlide].className = 'slide_r isnt_showing'
-		}
-	}
-
+			currentSlide = (currentSlide+1)%slides.length;
+			slides[currentSlide].checked = true;
+			slides[currentSlide].className = 'slide_r isnt_showing';
+     }
+   ;}
+});
 </script>
 </body>
 </html>
