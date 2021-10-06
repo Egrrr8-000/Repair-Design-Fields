@@ -10,14 +10,17 @@ body {
 	margin: 0;
 }
 
+.hello_users_all {
+	height: 265%;
+  overflow: hidden;
+}
+
 .hello_users {
 	background-color: #161515;
 }
 
 .hello_users_header {
-	margin-left: 65px;
-	margin-right: 65px;
-    margin-top: 48px;
+	margin: 25px 10% 0;
 }
 
 .hello_users_header button{
@@ -201,9 +204,101 @@ input[name="r"] {
 
 .before_slides {
 	width: 100%;
-  height: 500px;
-  background-color: blanchedalmond;
+  height: 155%;
   position: absolute;
   top: 110%;
   z-index: 5;
+}
+
+.before_slides_ten {
+	filter: drop-shadow(0px 0px 12px #0D0C0C);
+}
+
+.before_slides_gradient {
+	height: 18%;
+	width: 100%;
+	background: linear-gradient(
+	180deg, rgba(22, 21, 21, 0) 0%, rgba(22, 21, 21, 0.7) 69.36%);
+}
+
+.bsg2 {
+	height: 10%;
+	position: absolute;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(22, 21, 21, 0) 0%, rgb(22 21 21 / 93%) 90%);
+}
+
+.before_slides_form {
+	width: 100%;
+	height: 82%;
+	background: rgba(22, 21, 21, 0.7);
+}
+
+.before_slides_form_zagolovok {
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 37px;
+	line-height: 83px;
+	align-items: center;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+	margin: 0% auto 0;
+	padding-top: 6%;
+	text-align: center;
+}
+.before_slides_form_podzagolovok {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	align-items: center;
+	color: #ffffff;
+	margin: -19px auto 1px;
+}
+
+.white_form_reg_auth_reset{
+	width: 34%;
+	margin: 22px auto;
+	padding: 15px;
+	border-radius: 22px;
+	background: #ffffff;
+}
+
+.white_form_reg_auth_reset input {
+	width: 100%;
+  height: 60px;
+  margin-bottom: 15px;
+  padding-left: 18px;
+  background: #F2F2F2;
+  border: 2px solid #C4C4C4;
+  border-radius: 16px;
+  font-size: 24px;
+}
+.white_form_reg_auth_reset input[type="submit"] {
+	background: #000;
+	color: #FFF;
+}
+
+.white_form_rar_podpis_1 {
+	text-align: center;
+  color: #f2f2f2;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+	margin: -8px auto 8px;
+}
+.white_form_rar_podpis_2, .white_form_rar_podpis_2 a {
+	text-align: center;
+  color: hsl(0deg 0% 70%);
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+	line-height: 19px;
 }
