@@ -40,7 +40,7 @@ body {
 		align-items: center;
 		letter-spacing: 0.05em;
 		color: #FFFFFF;
-		margin: 8% auto 0;
+		margin: 5% auto 0;
 		text-align: center;
 	}
 
@@ -75,7 +75,7 @@ body {
 .navigation {
 	position: absolute;
 	left: 50%;
-	top: 54%;
+	top: 45%;
 	transform: translateX(-50%);
 	display: flex;
 	z-index: 5;
@@ -97,7 +97,7 @@ body {
 	transform: rotate(1.1);
 }
 
-input[name="r"] {
+input[name="r"], input[name="openned_form"] {
 	position: absolute;
 	visibility: hidden;
 }
@@ -232,6 +232,7 @@ input[name="r"] {
 	width: 100%;
 	height: 82%;
 	background: rgba(22, 21, 21, 0.7);
+	display: grid;
 }
 
 .before_slides_form_zagolovok {
@@ -280,6 +281,17 @@ input[name="r"] {
 .white_form_reg_auth_reset input[type="submit"] {
 	background: #000;
 	color: #FFF;
+	cursor: pointer;
+}
+.white_form_reg_auth_reset input[type="submit"]:hover {
+	background: #27272a;
+	transition: 0.3s;
+}
+.podpis_na_forme {
+	font-family: 'Roboto';
+	font-size: 12px;
+	margin: -10px 10px 10px;
+	color: #757575;
 }
 
 .white_form_rar_podpis_1 {
@@ -301,4 +313,34 @@ input[name="r"] {
   font-weight: normal;
   letter-spacing: 0.05em;
 	line-height: 19px;
+}
+
+.before_slides_reg, .before_slides_auth, .before_slides_reset_pass {
+	visibility: hidden;
+	transition: all .4s;
+	grid-column: 1;
+  grid-row: 1;
+}
+.before_slides_reg label, .before_slides_auth label, .before_slides_reset_pass label {
+	cursor: pointer;
+}
+.before_slides_reg label:hover, .before_slides_auth label:hover, .before_slides_reset_pass label:hover {
+	color: #d5a9c1;
+	transition: .03s;
+}
+
+#reg:checked ~ .before_slides_reg {
+	visibility: visible;
+	transition: 1s;
+	z-index: 4;
+}
+#auth:checked ~ .before_slides_auth {
+	visibility: visible;
+	z-index: 4;
+	transition: 1s;
+}
+#reset_pass:checked ~ .before_slides_reset_pass {
+	visibility: visible;
+	z-index: 4;
+	transition: 1s;
 }

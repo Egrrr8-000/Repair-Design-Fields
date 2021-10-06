@@ -336,12 +336,17 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="before_slides">
 				<div class="before_slides_gradient bsg1"></div>
 				<div class="before_slides_form">
+					<input type="radio" name="openned_form" id="reg" checked>
+					<input type="radio" name="openned_form" id="auth">
+					<input type="radio" name="openned_form" id="reset_pass">
+
 					<div class="before_slides_reg">
 						<h1 class="before_slides_form_zagolovok before_slides_ten">Зарегистрируйтесь,</h1>
-						<p class="before_slides_form_podzagolovok before_slides_ten">чтобы сохранять к себе каждый понравившийся элемент.</p>
+						<p class="before_slides_form_podzagolovok before_slides_ten">чтобы сохранять к себе каждый понравившийся элемент</p>
 						<div class="white_form_reg_auth_reset before_slides_ten">
 							<form name="reg_form" method="post" action="try_to_reg.py">
 								<input type="tel" name="reg_tel" placeholder="Ваш номер телефона">
@@ -352,11 +357,39 @@
 								<input type="submit" name="start_reg" value="Зарегистрироваться" style="margin-bottom: 0px;">
 							</form>
 						</div>
-						<p class="white_form_rar_podpis_1 before_slides_ten">У меня есть аккаунт — войти ›</p>
-						<p class="white_form_rar_podpis_2 before_slides_ten">Пользуясь этой информационной системой, вы<br>соглашаетесь на условия <span><a href="#">конфиденциальности.</a></span></p>
+						<p class="white_form_rar_podpis_1 before_slides_ten">У меня есть аккаунт —<label for="auth" id="to_auth"> войти ›</label></p>
+						<p class="white_form_rar_podpis_2 before_slides_ten">Пользуясь этой информационной системой, вы<br>соглашаетесь на <span><a href="#">условия конфиденциальности.</a></span></p>
 					</div>
-					<div class="before_slides_auth"></div>
-					<div class="before_slides_resetpass"></div>
+
+					<div class="before_slides_auth">
+						<h1 class="before_slides_form_zagolovok before_slides_ten">Авторизируйтесь,</h1>
+						<p class="before_slides_form_podzagolovok before_slides_ten">чтобы свободно пользоваться всем функционалом системы</p>
+						<div class="white_form_reg_auth_reset before_slides_ten">
+							<form name="auth_form" method="post" action="try_to_auth.py">
+								<input type="text" name="auth_input" placeholder="Телефон, почта или ник">
+								<input type="password" name="auth_pass" placeholder="Пароль">
+								<label class="podpis_na_forme" for="reset_pass" name="to_reset_pass">Забыл свой пароль...</label>
+								<input type="submit" name="start_auth" value="Войти" style="margin-bottom: 0px;">
+							</form>
+						</div>
+						<p class="white_form_rar_podpis_1 before_slides_ten"><label for="reg" id="to_reg">Зарегистрироваться ›</label></p>
+						<p class="white_form_rar_podpis_2 before_slides_ten">Пользуясь этой информационной системой, вы<br>соглашаетесь на <span><a href="#">условия конфиденциальности.</a></span></p>
+					</div>
+
+					<div class="before_slides_reset_pass">
+						<h1 class="before_slides_form_zagolovok before_slides_ten">Восстановить доступ</h1>
+						<p class="before_slides_form_podzagolovok before_slides_ten">к своему аккаунту на «Ремонт и Дизайн»</p>
+						<div class="white_form_reg_auth_reset before_slides_ten">
+							<form name="reset_pass_form" method="post" action="try_to_reset_pass.py">
+								<input type="text" name="reset_input" placeholder="Эл.почта">
+								<p class="podpis_na_forme">Мы отправим код для сброса пароля на вашу почту</p>
+								<input type="submit" name="start_auth" value="Восстановить доступ" style="margin-bottom: 0px;">
+							</form>
+						</div>
+						<p class="white_form_rar_podpis_1 before_slides_ten"><label for="auth" id="to_auth">Я вспомнил пароль для авторизации ›</label></p>
+						<p class="white_form_rar_podpis_2 before_slides_ten">Пользуясь этой информационной системой, вы<br>соглашаетесь на <span><a href="#">условия конфиденциальности.</a></span></p>
+					</div>
+
 					<div class="before_slides_gradient bsg2"></div>
 				</div>
 			</div>
