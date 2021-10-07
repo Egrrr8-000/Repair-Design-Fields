@@ -6,9 +6,9 @@
 <body class="hello_users">
 	<div class="hello_users_all">
 		<div class="hello_users_header">
-			<img src="images/logo.svg" alt="Ремонт и дизайн Лого" >
-			<button><p>Регистрация</p></button>
-			<button><p>Войти</p></button>
+			<img src="sourses/logo.svg" alt="Ремонт и дизайн Лого" >
+			<label for="reg" class="header_reg_btm">Регистрация</label>
+			<label for="auth" class="header_reg_btm">Войти</label>
 		</div>
 		<div class="slider middle"> <!--  слайдер-->
 			<div class="slides">
@@ -354,7 +354,7 @@
 								<input type="number" name="reg_age" placeholder="Сколько вам лет?">
 								<input type="password" name="reg_pass" placeholder="Придумайте пароль">
 								<input type="text" name="reg_nick" placeholder="Придумайте себе ник">
-								<input type="submit" name="start_reg" value="Зарегистрироваться" style="margin-bottom: 0px;">
+								<div class="submit_bs_form">  <input class="submit_bs_form_input" type="submit" name="start_reg" value="Зарегистрироваться" style="margin-bottom: 0px;">  </div>
 							</form>
 						</div>
 						<p class="white_form_rar_podpis_1 before_slides_ten">У меня есть аккаунт —<label for="auth" id="to_auth"> войти ›</label></p>
@@ -369,7 +369,7 @@
 								<input type="text" name="auth_input" placeholder="Телефон, почта или ник">
 								<input type="password" name="auth_pass" placeholder="Пароль">
 								<label class="podpis_na_forme" for="reset_pass" name="to_reset_pass">Забыл свой пароль...</label>
-								<input type="submit" name="start_auth" value="Войти" style="margin-bottom: 0px;">
+								<div class="submit_bs_form">  <input class="submit_bs_form_input" type="submit" name="start_auth" value="Войти" style="margin-bottom: 0px;">  </div>
 							</form>
 						</div>
 						<p class="white_form_rar_podpis_1 before_slides_ten"><label for="reg" id="to_reg">Зарегистрироваться ›</label></p>
@@ -383,7 +383,7 @@
 							<form name="reset_pass_form" method="post" action="try_to_reset_pass.py">
 								<input type="text" name="reset_input" placeholder="Эл.почта">
 								<p class="podpis_na_forme">Мы отправим код для сброса пароля на вашу почту</p>
-								<input type="submit" name="start_auth" value="Восстановить доступ" style="margin-bottom: 0px;">
+								<div class="submit_bs_form">  <input class="submit_bs_form_input" type="submit" name="start_auth" value="Восстановить доступ" style="margin-bottom: 0px;">  </div>
 							</form>
 						</div>
 						<p class="white_form_rar_podpis_1 before_slides_ten"><label for="auth" id="to_auth">Я вспомнил пароль для авторизации ›</label></p>
@@ -404,23 +404,38 @@
 	  crossorigin="anonymous">
 	</script>
 	<script>
-	jQuery(document).ready(function() {
-	console.log('Привет от JavaScript!');
-	console.log('Высота экрана: ' + screen.height);
-	var slides = document.getElementsByClassName('slide_r');
-	var currentSlide = 0;
-	var slideInterval = setInterval(nextSlide,4800);
-	function nextSlide() {
-		console.log('Scroll: ' + $(window).scrollTop());
-    if ($(window).scrollTop() < screen.height*0.53) {
-			slides[currentSlide].className = 'slide_r isnt_showing';
-			currentSlide = (currentSlide+1)%slides.length;
-			slides[currentSlide].checked = true;
-			slides[currentSlide].className = 'slide_r isnt_showing';
-     }
-   ;}
-});
-</script>
+		jQuery(document).ready(function() {
+		console.log('Привет от JavaScript!');
+		console.log('Высота экрана: ' + screen.height);
+		var slides = document.getElementsByClassName('slide_r');
+		var currentSlide = 0;
+		var slideInterval = setInterval(nextSlide,4800);
+		function nextSlide() {
+			console.log('Scroll: ' + $(window).scrollTop());
+	    if ($(window).scrollTop() < screen.height*0.53) {
+				slides[currentSlide].className = 'slide_r isnt_showing';
+				currentSlide = (currentSlide+1)%slides.length;
+				slides[currentSlide].checked = true;
+				slides[currentSlide].className = 'slide_r isnt_showing';
+	     }
+	   ;}
+		});
+
+		$(".header_reg_btm").click(function(){
+			$("html, body").stop().animate( {
+				scrollTop: screen.height*1.3
+			}, 1200);
+		});
+
+		$(".submit_bs_form_input").hover(
+		  function(){
+		    $(".submit_bs_form").css("background", "hsl(116deg 100% 3%)");
+		  },
+		  function(){
+				$(".submit_bs_form").css("background", "#000");
+			}
+		);
+	</script>
 </body>
 </html>
 
