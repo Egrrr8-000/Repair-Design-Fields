@@ -84,7 +84,7 @@ body {
 
 .slider {
 	width: 100%;
-	overflow: hidden;
+	/* overflow: hidden;  походу хрень ненужная*/
 }
 
 .middle {
@@ -142,6 +142,11 @@ input[name="r"], input[name="openned_form"] {
 	width: 100%;
 	margin: 0 auto;
 	color: wheat;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: space-between;
 }
 
 .si1{
@@ -156,13 +161,13 @@ input[name="r"], input[name="openned_form"] {
 
 .img_div{
 	width: 23%;
-  height: 25%;
+  /* height: 25%; из-за этого каждая 3ья фотка почему-то обрезается*/
   max-width: 300px;
   min-width: 200px;
   max-height: 500px;
   min-height: 400px;
   display: inline-block;
-  margin: 0 18.6px 30px 0;
+  margin: 0 0 30px 0;
   border-radius: 18px;
   color: black;
   text-align: center;
@@ -346,7 +351,7 @@ input[name="r"], input[name="openned_form"] {
 
 .before_slides_reg, .before_slides_auth, .before_slides_reset_pass {
 	visibility: hidden;
-	transition: all .4s;
+	transition: all .15s;
 	grid-column: 1;
   grid-row: 1;
 }
