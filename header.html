@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Header</title>
+  <link rel="stylesheet" href="lib\css\style_header.css">
+</head>
+<body>
+  <div class="header">
+    <a href="#"> <img src="sources/logo_mini.svg" alt=""> </a>
+    <div class="header_search">
+      <img src="sources/search.svg" alt="">
+      <form class="" action="search.py" method="post">
+        <input type="text" name="search_input" value="" placeholder="Я ищу...">
+      </form>
+    </div>
+    <div class="header_content">
+      <a href="" class="not_heart">Ремонт</a>
+      <a href="" class="not_heart">Дизайн</a>
+      <a href="" class="not_heart">Лайфхаки</a>
+      <a href="" class="saved_heart"><p>Избранное</p><img src="sources/heart.svg" alt=""></a>
+    </div>
+    <div class="role_buttoms">
+      <a href="" class="ad_panel"></a>
+      <a href="" class="super_admin_panel"></a>
+      <a href="" class="create_new_pub"></a>
+    </div>
+    <div class="avatar">
+      <label for="avatar" class="account">
+        <div class="account_img"><img src="images/avatars/avatar-1.png" alt=""></div>
+        <p>Алексей</p>
+        <img src="" alt="">
+        <ul>
+          <li>Мой профиль</li>
+          <li>Настройки</li>
+          <li>Помощь</li>
+        </ul>
+      </label>
+      <label for="notifications" class="notifications">
+        <img src="" alt="">
+        <div class="notifications_count">
+          <p>99+</p>
+        </div>
+        <span class="notifications_opened">
+          <p>Уведомления:</p>
+          <ul>
+            <li>
+              <img src="" alt="">
+              <p>Егор Иванов сохарнил в “Избранне” вашу публикацию <a href="#">Шкаф на балконе</a></p>
+              <p>Сегодня, 12:12</p>
+            </li>
+            <li>
+              <img src="" alt="">
+              <p>Закончился бюджет на рекламной кампании <a href="#">NEW ERA MILITARY</a></p>
+              <p>Вчера, 23:39</p>
+            </li>
+          </ul>
+          <p>Просмотренные уведомления:</p>
+          <ul>
+            <li>
+              <img src="" alt="">
+              <p>Началась рекламаная кампания <a href="#">NEW ERA MILITARY</a></p>
+              <p>Вчера, 22:50</p>
+            </li>
+            <li>
+              <img src="" alt="">
+              <p>Вашу публикацию <a href="#">Шкаф на балконе</a> просмотрели первые 100 человек!</p>
+              <p>1 августа, 12:50</p>
+            </li>
+            <li>
+              <img src="" alt="">
+              <p>Вашу публикацию <a href="#">Шкаф на балконе</a> просмотрели первые 100 человек!</p>
+              <p>34 августа, 12:50</p>
+            </li>
+          </ul>
+          <form class="more_notifications" action="more_notifications.py" method="post">
+            <button type="button" name="more_notifications">Показать ещё</button>
+          </form>
+        </span>
+      </label>
+    </div>
+  </div>
+</body>
+</html>
