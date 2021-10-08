@@ -317,7 +317,7 @@ input[name="r"], input[name="openned_form"] {
 	font-size: 29px;
   border: 2px solid #000000;
 
-	background-image: url(sourses/reg-submit-gradient.svg);
+	background-image: url(../../sourses/reg-submit-gradient.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -359,7 +359,7 @@ input[name="r"], input[name="openned_form"] {
 }
 
 .before_slides_reg, .before_slides_auth, .before_slides_reset_pass {
-	visibility: hidden;
+	display: none;
 	transition: all .15s;
 	grid-column: 1;
   grid-row: 1;
@@ -373,17 +373,17 @@ input[name="r"], input[name="openned_form"] {
 }
 
 #reg:checked ~ .before_slides_reg {
-	visibility: visible;
+	display: block;
 	transition: 1s;
 	z-index: 4;
 }
 #auth:checked ~ .before_slides_auth {
-	visibility: visible;
+	display: block;
 	z-index: 4;
 	transition: 1s;
 }
 #reset_pass:checked ~ .before_slides_reset_pass {
-	visibility: visible;
+	display: block;
 	z-index: 4;
 	transition: 1s;
 }
