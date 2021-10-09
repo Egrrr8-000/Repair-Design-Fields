@@ -25,60 +25,113 @@
       <a href="" class="super_admin_panel"></a>
       <a href="" class="create_new_pub"></a>
     </div>
-    <div class="avatar">
-      <label for="avatar" class="account">
-        <div class="account_img"><img src="images/avatars/avatar-1.png" alt=""></div>
-        <p>Алексей</p>
-        <img src="" alt="">
-        <ul>
+
+    <div class="avatar_and_notifications">
+      <input class="non_visib" type="radio" name="is_avatar_oppened" id="avatar_0" checked>
+      <input class="non_visib" type="radio" name="is_avatar_oppened" id="avatar_1">
+      <input class="non_visib" type="radio" name="is_notifications_oppened" id="notifications_0" checked>
+      <input class="non_visib" type="radio" name="is_notifications_oppened" id="notifications_1">
+
+      <button class="avatar_btn">
+        <div class="avatar_options_mini">
+          <div class="account_img"><img src="images/avatars/avatar-1.png" alt=""></div>
+          <p>Алексей</p>
+          <img class="avatar_triangle" src="sources/avatar-triangle.svg" alt="">
+        </div>
+        <ul class="avatar_options">
           <li>Мой профиль</li>
           <li>Настройки</li>
           <li>Помощь</li>
         </ul>
-      </label>
-      <label for="notifications" class="notifications">
-        <img src="" alt="">
-        <div class="notifications_count">
-          <p>99+</p>
-        </div>
-        <span class="notifications_opened">
-          <p>Уведомления:</p>
-          <ul>
-            <li>
-              <img src="" alt="">
-              <p>Егор Иванов сохарнил в “Избранне” вашу публикацию <a href="#">Шкаф на балконе</a></p>
-              <p>Сегодня, 12:12</p>
-            </li>
-            <li>
-              <img src="" alt="">
-              <p>Закончился бюджет на рекламной кампании <a href="#">NEW ERA MILITARY</a></p>
-              <p>Вчера, 23:39</p>
-            </li>
-          </ul>
-          <p>Просмотренные уведомления:</p>
-          <ul>
-            <li>
-              <img src="" alt="">
-              <p>Началась рекламаная кампания <a href="#">NEW ERA MILITARY</a></p>
-              <p>Вчера, 22:50</p>
-            </li>
-            <li>
-              <img src="" alt="">
-              <p>Вашу публикацию <a href="#">Шкаф на балконе</a> просмотрели первые 100 человек!</p>
-              <p>1 августа, 12:50</p>
-            </li>
-            <li>
-              <img src="" alt="">
-              <p>Вашу публикацию <a href="#">Шкаф на балконе</a> просмотрели первые 100 человек!</p>
-              <p>34 августа, 12:50</p>
-            </li>
-          </ul>
-          <form class="more_notifications" action="more_notifications.py" method="post">
-            <button type="button" name="more_notifications">Показать ещё</button>
-          </form>
-        </span>
-      </label>
+      </button>
+      <div class="notifications">
+        <!-- <label for="notifications_1" class="notifications">
+          <img src="" alt="">
+          <div class="notifications_count">
+            <p>99+</p>
+          </div>
+          <span class="notifications_opened">
+            <p>Уведомления:</p>
+            <ul>
+              <li>
+                <img src="" alt="">
+                <p>Егор Иванов сохарнил в “Избранне” вашу публикацию <a href="#">Шкаф на балконе</a></p>
+                <p>Сегодня, 12:12</p>
+              </li>
+              <li>
+                <img src="" alt="">
+                <p>Закончился бюджет на рекламной кампании <a href="#">NEW ERA MILITARY</a></p>
+                <p>Вчера, 23:39</p>
+              </li>
+            </ul>
+            <p>Просмотренные уведомления:</p>
+            <ul>
+              <li>
+                <img src="" alt="">
+                <p>Началась рекламаная кампания <a href="#">NEW ERA MILITARY</a></p>
+                <p>Вчера, 22:50</p>
+              </li>
+              <li>
+                <img src="" alt="">
+                <p>Вашу публикацию <a href="#">Шкаф на балконе</a> просмотрели первые 100 человек!</p>
+                <p>1 августа, 12:50</p>
+              </li>
+              <li>
+                <img src="" alt="">
+                <p>Вашу публикацию <a href="#">Шкаф на балконе</a> просмотрели первые 100 человек!</p>
+                <p>34 августа, 12:50</p>
+              </li>
+            </ul>
+            <form class="more_notifications" action="more_notifications.py" method="post">
+              <button type="button" name="more_notifications">Показать ещё</button>
+            </form>
+          </span>
+        </label> -->
+      </div>
     </div>
+
+  <script>
+  !function() {
+    "use strict";
+    document.addEventListener ("click",function(t)
+    {
+      const e=t.target.closest("[data-easy-toggle]");
+      if(e)
+      {
+        t.preventDefault();
+        let a=e.getAttribute("data-easy-toggle"),s=e.getAttribute("data-easy-class");
+        try{
+          document.querySelectorAll("[data-easy-toggle]").forEach(t=>
+            {
+              t.hasAttribute("data-easy-parallel")||t===e||document.querySelector(t.getAttribute("data-easy-toggle")).classList.remove(t.getAttribute("data-easy-class"))
+            }
+          ),document.querySelector(a).classList.toggle(s)
+        }
+        catch(t)
+        {
+          console.warn("EasyToggler.js : Блок "+a+" не существует")
+        }}
+        if(!e)
+        {
+          let e=document.querySelectorAll("[data-easy-rcoe]");
+          Array.from(e).forEach.call(e,function(e)
+          {
+            let a=e.getAttribute("data-easy-toggle"),s=e.getAttribute("data-easy-class");
+            if(!t.target.closest(a))try
+            {
+              document.querySelector(a).classList.remove(s)
+            }
+            catch(t)
+            {
+              console.warn("EasyToggler.js : Блок "+a+" не существует")
+            }
+          }
+        )
+      }
+    }
+  )}();
+  </script> <!-- https://github.com/rah-emil/easy-toggler
+            https://www.youtube.com/watch?v=m8FG7kfQLs8&t=512   -->
   </div>
 </body>
 </html>

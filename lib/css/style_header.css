@@ -10,15 +10,15 @@
 }
 
 .header{
-  width: 100%;
+  width: 80%;
   height: 50px;
   padding: 0 10%;
   background: #161515;
   display: flex;
   align-content: center;
   flex-direction: row;
-  justify-content: flex-start;
   align-items: stretch;
+  justify-content: space-between;
 }
 
 .header_search {
@@ -50,17 +50,19 @@
 }
 
 .header_content {
-  eight: 100%;
-  width: 33%;
+  height: 100%;
+  width: 40%;
   display: flex;
   flex-wrap: nowrap;
   align-content: flex-start;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
+  align-items: center;
+  /* margin-right: 6%; */
 }
 .header_content a{
   font-family: PT Sans, sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 24px;
   padding: 13px 2%;
   letter-spacing: 0.065em;
@@ -71,11 +73,11 @@
   background: #383636;
 }
 .saved_heart {
-  background: url(../../sources/heart-bg.svg) no-repeat 27px 0;
+  background: url(../../sources/heart-bg.svg) no-repeat 9px 0;
   display: flex;
 }
 .saved_heart:hover {
-  background: url(../../sources/heart-bg-hover.svg) no-repeat 25px 0;
+  background: url(../../sources/heart-bg-hover.svg) no-repeat 9px 0;
 }
 .header_content a > p {
   padding-right: 5%;
@@ -88,9 +90,10 @@
   display: flex;
   flex-direction: row;
   align-content: center;
+  width: 9%;
+  justify-content: space-between;
   align-items: center;
-  width: 8%;
-  justify-content: space-around;
+  flex-wrap: nowrap;
 }
 .role_buttoms a {
   width: 30px;
@@ -118,12 +121,52 @@
   background: url(../../sources/create_new_pub_hover.svg) no-repeat;
 }
 
-.avatar {
+.avatar_and_notifications {
+  width: 20%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-content: center;
+  justify-content: space-around;
+}
+.non_visib {
+  position: absolute;
+  visibility: hidden;
+}
+.avatar_btn{
+  height: 100%;
+  width: 80%;
+  border: none;
+  background: none;
+  /* padding: 0 10px; */
+  cursor: pointer;
+  font-family: PT Sans, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.065em;
+  color: #FFFFFF;
+  /* display: flex; */
+  align-content: flex-start;
   justify-content: flex-start;
+  align-items: flex-start;
+  transition: all 0.4s ease;
+  display: block;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.avatar_btn:hover{
+  background: #262526;
+}
+.avatar_options_mini {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.avatar_triangle {
+
 }
 .account_img {
   width: 40px;
@@ -132,4 +175,14 @@
   border: 1px solid #FFFFFF;
   overflow: hidden;
   margin: 5px 0;
+}
+.avatar_options  {
+  z-index: -1;
+  visibility: hidden;
+  text-align: left;
+  background: #262526;
+  padding: 5px;
+  width: 100%;
+  text-align: left;
+  padding: 0 10px;
 }
