@@ -7,9 +7,9 @@
 </head>
 <body>
   <div class="header">
-    <a href="#"> <img src="sources/logo_mini.svg" alt=""> </a>
+    <a href=""> <div class="logo_mini"></div> </a>
     <div class="header_search">
-      <img src="sources/search.svg" alt="">
+      <img src="sources/SVG/search.svg" alt="">
       <form class="" action="search.py" method="post">
         <input type="text" name="search_input" value="" placeholder="Я ищу...">
       </form>
@@ -18,7 +18,7 @@
       <a href="" class="not_heart">Ремонт</a>
       <a href="" class="not_heart">Дизайн</a>
       <a href="" class="not_heart">Лайфхаки</a>
-      <a href="" class="saved_heart"><p>Избранное</p><img src="sources/heart.svg" alt=""></a>
+      <a href="" class="saved_heart"><p>Избранное</p><img src="sources/SVG/heart.svg" alt=""></a>
     </div>
     <div class="role_buttoms">
       <a href="" class="ad_panel"></a>
@@ -32,7 +32,7 @@
           <div class="avatar_options_mini">
             <div class="account_img"><img src="images/avatars/avatar-1.png" alt=""></div>
             <p>Алексей</p>
-            <img class="avatar_triangle" src="sources/avatar-triangle.svg" alt="">
+            <img class="avatar_triangle" src="sources/SVG/avatar-triangle.svg" alt="">
           </div>
         </button>
         <div id="avtr_optns" class="avatar_options">
@@ -45,42 +45,44 @@
       <div class="notifications_container">
         <button class="notifications_btn" data-easy-toggle="#ntfctns_more" data-easy-class="show_ntfctns_more" data-easy-rcoe>
           <div class="notifications_mini">
-            <img src="" alt="">
+            <div class="noti_logo"></div>
             <p>99+</p>
           </div>
         </button>
         <div id="ntfctns_more" class="notifications_opened">
-          <p>Уведомления:</p>
+          <p class="title_notifications_opened">Уведомления:</p>
           <div class="notification_one noti_new">
-            <img src="" alt="">
-            <p>Егор Иванов сохарнил в “Избранне” вашу публикацию <a href="#">Шкаф на балконе</a></p>
-            <p>Сегодня, 12:12</p>
+            <div class="noti_one_logo"></div>
+            <p class="content_noti">Егор Иванов сохарнил в “Избранне” вашу публикацию <a href="#">Шкаф на балконе</a></p>
+            <p class="when_happend_noti">Сегодня, 12:12</p>
           </div>
           <div class="notification_one noti_new">
-            <img src="" alt="">
-            <p>Закончился бюджет на рекламной кампании <a href="#">NEW ERA MILITARY</a></p>
-            <p>Вчера, 23:39</p>
+            <div class="noti_one_logo"></div>
+            <p class="content_noti">Закончился бюджет на рекламной кампании <a href="#">NEW ERA MILITARY</a></p>
+            <p class="when_happend_noti">Вчера, 23:39</p>
           </div>
-          <p>Просмотренные уведомления:</p>
+          <p class="title_seen_notifications_opened">Просмотренные уведомления:</p>
           <div class="notification_one noti_old">
-            <img src="" alt="">
-            <p>Началась рекламаная кампания <a href="#">NEW ERA MILITARY</a></p>
-            <p>Вчера, 22:50</p>
-          </div>
-          <div class="notification_one noti_old">
-            <img src="" alt="">
-            <p>Вашу публикацию <a href="#">Шкаф на балконе</a> просмотрели первые 100 человек!</p>
-            <p>1 августа, 12:50</p>
+            <div class="noti_one_logo"></div>
+            <p class="content_noti">Началась рекламаная кампания <a href="#">NEW ERA MILITARY</a></p>
+            <p class="when_happend_noti">Вчера, 22:50</p>
           </div>
           <div class="notification_one noti_old">
-            <img src="" alt="">
-            <p>Вашу публикацию <a href="#">Шкаф на балконе</a> просмотрели первые 100 человек!</p>
-            <p>34 августа, 12:50</p>
+            <div class="noti_one_logo"></div>
+            <p class="content_noti">Вашу публикацию <a href="#">Шкаф на балконе</a> просмотрели первые 100 человек!</p>
+            <p class="when_happend_noti">1 августа, 12:50</p>
+          </div>
+          <div class="notification_one noti_old">
+            <div class="noti_one_logo"></div>
+            <p class="content_noti">Вашу публикацию <a href="#">Шкаф на балконе</a> просмотрели первые 100 человек!</p>
+            <p class="when_happend_noti">34 августа, 12:50</p>
           </div>
           <form class="more_notifications" action="more_notifications.py" method="post">
-            <button type="button" name="more_notifications">Показать ещё</button>
+            <button type="button" name="more_notifications" class="show_more_noti">Показать ещё</button>
           </form>
         </div>
+      </div>
+    </div>
 
     <!-- HEADER SCRIPT -->
     <script>
@@ -129,6 +131,7 @@
     // https://github.com/rah-emil/easy-toggler
     // https://www.youtube.com/watch?v=m8FG7kfQLs8&t=512
     </script>
+
   </div>
   <div class="header_clear_hix"> <!-- чтобы под хэдэр ничего не попадало --> </div>
 
