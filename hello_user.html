@@ -17,16 +17,16 @@
 				<input class="slide_r isnt_showing" type="radio" name="r" id="r2">
 				<input class="slide_r isnt_showing" type="radio" name="r" id="r3">
 
-				<div class="navigation">
-					<label for="r1" class="bar" id="b1"></label>
-					<label for="r2" class="bar" id="b2"></label>
-					<label for="r3" class="bar" id="b3"></label>
-				</div>
 				<div class="slide s1">
 					<div class="hello_users_header2">
 						<h1>Стиль для твоей квартиры</h1>
 						<p>Выбери своё, по вкусу</p>
 					</div>
+					<div class="navigation">
+					<label for="r1" class="bar" id="b1"></label>
+					<label for="r2" class="bar" id="b2"></label>
+					<label for="r3" class="bar" id="b3"></label>
+				</div>
 					<div class="slide_images si1">
 						<div class="img_div">
 							<div class="img_from_pub">
@@ -120,6 +120,11 @@
 						<h1>Всё о ремонте твоей квартиры</h1>
 						<p>Освой основы отделки, электропроводки, кладки и т.д.</p>
 					</div>
+					<div class="navigation">
+					<label for="r1" class="bar" id="b1"></label>
+					<label for="r2" class="bar" id="b2"></label>
+					<label for="r3" class="bar" id="b3"></label>
+				</div>
 					<div class="slide_images si1">
 						<div class="img_div">
 							<div class="img_from_pub">
@@ -210,8 +215,14 @@
 
 				<div class="slide s3">
 					<div class="hello_users_header2">
+					
 						<h1>Лёгкие решения, упрощающие жизнь</h1>
 						<p>Лайфхаки по быту и уюту, чтобы было меньше рутины и больше комфорта</p>
+					</div>
+					<div class="navigation">
+					<label for="r1" class="bar" id="b1"></label>
+					<label for="r2" class="bar" id="b2"></label>
+					<label for="r3" class="bar" id="b3"></label>
 					</div>
 					<div class="slide_images si1">
 						<div class="img_div">
@@ -373,6 +384,7 @@
 		var slides = document.getElementsByClassName('slide_r');
 		var currentSlide = 0;
 		var slideInterval = setInterval(nextSlide,4800);
+		var navigation = document.getElementsByClassName('navigation');
 		function nextSlide() {
 			console.log('Scroll: ' + $(window).scrollTop());
 	    if ($(window).scrollTop() < screen.height*0.53) {
