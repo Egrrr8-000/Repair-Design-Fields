@@ -8,12 +8,16 @@
     text-decoration: none;
     list-style: none;
 }
-
+.header_clear_hix {
+  height: 50px;
+  width: 100%;
+}
 .header {
     width: 80%;
     height: 50px;
     padding: 0 10%;
     background: #161515;
+    position: fixed;
     display: flex;
     align-content: center;
     flex-direction: row;
@@ -150,21 +154,17 @@
 }
 
 .avatar_container {
-    height: 100%;
-    width: 80%;
-    cursor: pointer;
-    font-family: PT Sans, sans-serif;
-    font-size: 15px;
-    line-height: 24px;
-    letter-spacing: 0.065em;
-    color: #FFFFFF;
-    display: flex;
-    align-content: flex-start;
-    justify-content: flex-start;
-    align-items: flex-start;
-    transition: all 0.4s ease;
-    flex-direction: column;
-    flex-wrap: nowrap;
+  height: 100%;
+  width: 80%;
+  cursor: pointer;
+  font-family: PT Sans, sans-serif;
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: all 0.4s ease;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .avatar_container:hover {
@@ -176,16 +176,23 @@
     background: none;
     width: 100%;
     height: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease;
 }
+/* .avatar_btn:focus {
+    background: #262526;
+} */
 
 .avatar_options_mini {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff;
+  font-size: 17px;
+  letter-spacing: 0.03em;
 }
 
 .avatar_triangle {
@@ -201,10 +208,29 @@
     margin: 5px 0;
 }
 
-.avatar_options {
+.avatar_options, .notifications_opened {
     z-index: -1;
     visibility: hidden;
+    opacity: 0;
     background: #262526;
     width: 100%;
-    text-align: left;
+    transition: all 0.4s ease;
+}
+.avatar_options.show_avtr_optns, .notifications_opened.show_ntfctns_more {
+  z-index: 99;
+  visibility: visible;
+  opacity: 1;
+}
+.avatar_options a {
+  padding: 9px 10%;
+  font-size: 15px;
+  color: #fff;
+  display: block;
+}
+.avatar_options a:hover {
+  background: #343234;
+}
+
+.experement_win {
+  background: red;
 }
