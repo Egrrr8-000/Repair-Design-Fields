@@ -216,10 +216,10 @@
 }
 
 .avatar_container .avatar_triangle {
-  transition: all 0.4s ease;
+  transition: all 0.2s ease;
 }
 .avatar_container.show_avtr_optns .avatar_triangle {
-  transform: rotate(180deg);
+  transform: rotate(90deg);
 }
 
 .avatar_btn, .notifications_btn {
