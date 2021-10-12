@@ -14,11 +14,19 @@
     width: 100%;
 }
 
+.header_bg {
+  z-index: 99;
+  width: 100%;
+  height: 50px;
+  background: #161515;
+  display: flex;
+  justify-content: center;
+}
+
 .header {
     width: 80%;
     height: 50px;
-    padding: 0 10%;
-    background: #161515;
+    max-width: 1100px;
     position: fixed;
     display: flex;
     align-content: center;
@@ -102,12 +110,12 @@
 }
 
 .saved_heart {
-    background: url(../../sources/SVG/heart-bg.svg) no-repeat 9px 0;
+    background: url(../../sources/SVG/heart-bg.svg) no-repeat 6px 0;
     display: flex;
 }
 
 .saved_heart:hover {
-    background: url(../../sources/SVG/heart-bg-hover.svg) no-repeat 9px 0;
+    background: url(../../sources/SVG/heart-bg-hover.svg) no-repeat 5px 0;
 }
 
 .header_content a > p {
@@ -122,7 +130,7 @@
     display: flex;
     flex-direction: row;
     align-content: center;
-    width: 9%;
+    /* width: 9%; наверное, это и не нужно*/
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
@@ -131,6 +139,7 @@
 .role_buttoms a {
     width: 30px;
     height: 30px;
+    margin: 0 2px;
 }
 
 .ad_panel {
@@ -163,13 +172,14 @@
 .noti_logo {
     width: 42px;
     height: 42px;
-    background: url(../../sources/SVG/notifications.svg) 10px 10px no-repeat;
+    background: url(../../sources/SVG/notifications.svg) 6px 10px no-repeat;
     background-size: 30px, 30px;
     transition: all 0.2s ease;
 }
 
-.noti_logo:hover {
-    background: url(../../sources/SVG/notifications_hover_and_focus.svg) 10px 10px no-repeat;
+.notifications_mini:hover .noti_logo,
+.notifications_container.show_ntfctns_more .noti_logo {
+    background: url(../../sources/SVG/notifications_hover_and_focus.svg) 6px 10px no-repeat;
     background-size: 30px, 30px;
 }
 
@@ -188,7 +198,7 @@
 
 .avatar_container {
     height: 100%;
-    width: 75%;
+    width: 70%;
     cursor: pointer;
     display: flex;
     align-content: flex-start;
@@ -199,8 +209,14 @@
     flex-wrap: nowrap;
 }
 
-.avatar_container:hover, .avatar_container.show_avtr_optns, .notifications_container.show_ntfctns_more  {
+.avatar_container:hover,
+.avatar_container.show_avtr_optns,
+.notifications_container.show_ntfctns_more  {
     background: #262526;
+}
+
+.avatar_container.show_avtr_optns .avatar_triangle {
+  transform: rotate(180deg);
 }
 
 .avatar_btn, .notifications_btn {
@@ -251,8 +267,9 @@
     transition: all 0.4s ease;
 }
 
-.avatar_container.show_avtr_optns .avatar_options, .notifications_container.show_ntfctns_more .notifications_opened {
-    z-index: 99;
+.avatar_container.show_avtr_optns .avatar_options,
+.notifications_container.show_ntfctns_more .notifications_opened {
+    z-index: 69;
     visibility: visible;
     opacity: 1;
 }
@@ -270,7 +287,7 @@
 }
 
 .notifications_container {
-    width: 25%;
+    width: 30%;
     display: flex;
     align-content: flex-start;
     justify-content: flex-start;
@@ -281,14 +298,14 @@
 }
 
 .notifications_mini {
-    padding: 4px 0;
-    display: flex;
-    color: #fff;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    align-content: center;
-    justify-content: flex-start;
+  padding: 4px 0;
+  display: flex;
+  color: #fff;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .notifications_mini p {
@@ -296,11 +313,11 @@
     padding: 1px 5px;
     border-radius: 8px;
     filter: drop-shadow(0px 0px 9px #BE0D0D);
-    margin: -16px 0 0 -18px;
+    margin: -16px 0 0 -20px;
 }
 
 .notifications_opened {
-    width: 650%;
+    width: 651%;
     position: relative;
     right: 550%;
     color: #fff;
