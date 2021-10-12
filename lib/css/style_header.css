@@ -215,6 +215,9 @@
     background: #262526;
 }
 
+.avatar_container .avatar_triangle {
+  transition: all 0.4s ease;
+}
 .avatar_container.show_avtr_optns .avatar_triangle {
   transform: rotate(180deg);
 }
