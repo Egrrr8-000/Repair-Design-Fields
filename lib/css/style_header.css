@@ -320,11 +320,36 @@
 }
 
 .notifications_opened {
-    width: 651%;
-    position: relative;
-    right: 550%;
-    color: #fff;
-    display: block;
+  width: 40%;
+  max-width: 400px;
+  height: 1000%;
+  overflow: auto;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  color: #fff;
+  display: block;
+}
+
+.notifications_opened::-webkit-scrollbar {
+    width: 8px;
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.15);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.notifications_opened::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #716f71;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+.notifications_opened::-webkit-scrollbar-thumb:window-inactive {
+   background: #1a191a;
+}
+
+.last_noti {
+  width: 100%;
 }
 
 .title_notifications_opened {
@@ -339,17 +364,30 @@
     padding: 10px 15px;
     color: #999595;
     font-size: 14px;
+    border-top: 2px solid #545151;
 }
 
 .notification_one {
-    padding: 0 15px;
+    padding: 15px;
     border-top: 2px solid #545151;
+    transition: all 0.2s ease;
+}
+
+.noti_new:hover {
+  background: #423c3c;
+}
+
+.noti_old:hover {
+  background: #262323;
 }
 
 .noti_one_logo {
     width: 40px;
     height: 40px;
     background: url(../../sources/SVG/not_specific.svg) no-repeat;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 25px;
 }
 
 .content_noti {
@@ -367,14 +405,14 @@
 }
 
 .when_happend_noti {
-    font-size: 10px;
+    margin-top: 5px;
+    font-size: 14px;
     font-family: "Roboto", sans-serif;
     color: #8C8787;
 }
 
 .show_more_noti {
     cursor: pointer;
-    border-top: 2px solid #545151;
     background: #302F2F;
     font-family: "Open Sans", sans-serif;
     width: 100%;
@@ -384,9 +422,16 @@
     padding: 5px 0 10px;
     transition: all 0.4s ease;
     border: none;
+    border-top: 2px solid #545151;
 }
 
 .show_more_noti:hover {
     background: #555353;
     color: #fff;
+}
+
+.more_notifications {
+  /* position: absolute; */
+    bottom: 0px;
+    width: 100%;
 }
