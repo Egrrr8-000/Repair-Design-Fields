@@ -27,7 +27,7 @@
 .header {
     width: 80%;
     height: 50px;
-    max-width: 1100px; 
+    max-width: 1100px;
     display: flex;
     align-content: center;
     flex-direction: row;
@@ -325,7 +325,7 @@
   height: 1000%;
   overflow: auto;
   position: absolute;
-  right: 0;
+  right: 10%;
   top: 50px;
   color: #fff;
   display: block;
