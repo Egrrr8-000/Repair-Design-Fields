@@ -30,7 +30,7 @@
   max-width: 700px;
   float: left;
   margin-right: 60px;
-  transition: all 0.3s ease;
+  transition: all 0.6s ease;
   background: url(../../sources/SVG/logo_huge.svg) 0px -15px no-repeat;
   background-size: cover;
   display: flex;
@@ -38,8 +38,9 @@
 }
 
 .logo_huge:hover {
-  background: url(../../sources/SVG/logo_huge_hover.svg) 0px -15px no-repeat;
+  background: url(../../sources/SVG/logo_huge_hover.png) 0px -15px no-repeat;
   background-size: cover;
+  transition: all 0.6s ease;
 }
 
 .text_in_logo {

@@ -21,13 +21,13 @@
   background: #161515;
   display: flex;
   justify-content: center;
+  position: fixed;
 }
 
 .header {
     width: 80%;
     height: 50px;
-    max-width: 1100px;
-    position: fixed;
+    max-width: 1100px; 
     display: flex;
     align-content: center;
     flex-direction: row;
