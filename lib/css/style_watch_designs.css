@@ -162,6 +162,7 @@ button, input[type="submit"] {
     background: url(../../sources/SVG/close.png) no-repeat;
     background-size: 10px 10px;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .filter_one:hover {
@@ -169,10 +170,10 @@ button, input[type="submit"] {
 }
 
 .filter_one:hover .to_close_filter {
-  margin-left: 3px;
-  width: 12px;
-  height: 12px;
-  background-size: 12px 12px;
+  margin-left: 4px;
+  width: 11px;
+  height: 11px;
+  background-size: 11px 11px;
 }
 
 .bringed_pubs {
@@ -227,14 +228,33 @@ button, input[type="submit"] {
 
 .cost input{
   outline: none;
-  width: 44%;
+    width: 44%;
+    height: 21px;
     border: solid 1.5px;
     padding: 0 5px;
+    border-radius: 7px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.close_btn {
+  position: absolute;
+  right: 6%;
+  top: 32px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background: url(../../sources/SVG/close.svg) no-repeat;
+  background-size: 30px 30px;
+  opacity: 0.65;
+  transition: all 0.3s ease;
+}
+
+.close_btn:hover {
+  opacity: 1;
 }
 
 .pubs_container {
