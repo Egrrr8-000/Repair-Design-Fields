@@ -246,14 +246,60 @@
   <div class="opened_filter_big_bg">
     <div class="opened_filter">
       <form class="opened_filter_form" action="to_filter_pubs" method="post">
-        <p class="pub_title">Фильтры для публикаций:</p>
-        <div class="filters_turned_on"> <p class="pub_text">Включенные фильтры:</p> </div>
-        <div class="bringed_pubs"> <p class="pub_text">Публикаций подобрано:</p> </div>
-        <div class="cost"> <p class="pub_text">По бюджетным затратам:</p> </div>
-        <div class="style"> <p class="pub_text">По основному стилю:</p> </div>
-        <div class="color"> <p class="pub_text">По основному цвету: </p> </div>
-        <div class="user_feedbacks"> <p class="pub_text">По активности пользователей:</p> </div>
-        <input type="button" name="to_filter" value="Отфильтровать публикации">
+        <p class="opened_filter_title">Фильтры для публикаций</p>
+        <div class="opened_filter_under_title">
+          <p class="opened_filter_second_title">349 подобрано</p>
+
+        </div>
+        <div class="filter_mini_div bringed_pubs">
+          <div class="filter_one">
+             <p>Фильтер 1</p>
+             <div class="to_close_filter"></div>
+           </div>
+           <div class="filter_one">
+             <p>Фильтер очень большой 382</p>
+             <div class="to_close_filter"></div>
+           </div>
+           <div class="filter_one">
+             <p>ывывывыв</p>
+             <div class="to_close_filter"></div>
+           </div>
+           <div class="filter_one">
+             <p>ыыы</p>
+             <div class="to_close_filter"></div>
+           </div>
+           <div class="filter_one">
+             <p>пропропрпо</p>
+             <div class="to_close_filter"></div>
+           </div>
+           <div class="filter_one">
+             <p>Артур</p>
+             <div class="to_close_filter"></div>
+           </div>
+           <div class="filter_one">
+             <p>ДорогоБохато</p>
+             <div class="to_close_filter"></div>
+           </div>
+           <div class="filter_one">
+             <p>ну ещё что-то</p>
+             <div class="to_close_filter"></div>
+           </div>
+           <div class="filter_one">
+             <p>что-то244</p>
+             <div class="to_close_filter"></div>
+           </div>
+           <input class="clear_filter" type="button" name="clear_filter" value="Очистить все фильтры">
+        </div>
+        <div class="filter_mini_div cost">
+          <p class="opened_filter_text full_width">Бюджет, ₽</p>
+          <input type="number" name="cost_mini" value="" placeholder="00">
+          <p style="font-size: 15px; font-weight: 900;">-</p>
+          <input type="number" name="cost_biggest" value="" placeholder="100000">
+        </div>
+        <div class="filter_mini_div style"> <p class="opened_filter_text">По основному стилю:</p> </div>
+        <div class="filter_mini_div color"> <p class="opened_filter_text">По основному цвету: </p> </div>
+        <div class="filter_mini_div user_feedbacks"> <p class="opened_filter_text">По активности пользователей:</p> </div>
+        <input class="filter_mini_div filter_to_filter" type="button" name="to_filter" value="Отфильтровать публикации">
       </form>
     </div>
   </div>

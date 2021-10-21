@@ -75,9 +75,10 @@ button, input[type="submit"] {
 .opened_filter {
   position: fixed;
   z-index: 11;
-  width: 50%;
-  max-width: 550px;
-  max-height: 50%;
+  width: 30%;
+  max-width: 330px;
+  max-height: 70%;
+  overflow: auto;
   right: 10%;
   top: 65px;
   background: white;
@@ -98,6 +99,101 @@ button, input[type="submit"] {
 
 .opened_filter_big_bg_opened {
   display: block;
+}
+
+.opened_filter_title {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.015em;
+  text-align: center;
+}
+
+.opened_filter_under_title {
+  display: flex;
+    justify-content: center;
+    margin: 0 0 15px;
+}
+
+.opened_filter_second_title {
+  font-size: 15px;
+  letter-spacing: 0;
+  color: #4a4a4a;
+  margin-right: 10px;
+}
+
+.clear_filter {
+  cursor: pointer;
+    background: none;
+    border: none;
+    color: gray;
+    font-size: 13px;
+    transition: all 0.55s ease;
+    max-height: 25px;
+}
+.clear_filter:hover {
+  color: black;
+}
+
+.filter_mini_div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter_one {
+  padding: 4px;
+    font-size: 10px;
+    font-family: 'Roboto';
+    border: 1.5px solid;
+    border-radius: 7px;
+    margin: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.filter_one  p {
+  font-size: 13px;
+    font-family: 'Roboto';
+    cursor: pointer;
+}
+.to_close_filter{
+  margin-left: 5px;
+    width: 10px;
+    height: 10px;
+    background: url(../../sources/SVG/close.png) no-repeat;
+    background-size: 10px 10px;
+    transition: all 0.3s ease;
+}
+
+.filter_one:hover {
+  background: #ededed;
+}
+
+.filter_one:hover .to_close_filter {
+  margin-left: 3px;
+  width: 12px;
+  height: 12px;
+  background-size: 12px 12px;
+}
+
+.bringed_pubs {
+  text-align: center;
+  margin: 0 0 20px;
+  font-size: 10px;
+  margin: 0 0 20px;
+}
+
+.opened_filter_text, .filter_to_filter {
+  font-size: 15px;
+  letter-spacing: 0;
+  margin: 0 0 5px;
+  font-family: 'Roboto';
+}
+.full_width {
+  width: 100%;
+}
+
+.filter_mini_div {
+  margin: 0 0 15px;
 }
 
 .page_title {
@@ -127,6 +223,18 @@ button, input[type="submit"] {
   color: #949494;
   margin-top: 12px;
   float: left;
+}
+
+.cost input{
+  outline: none;
+  width: 44%;
+    border: solid 1.5px;
+    padding: 0 5px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .pubs_container {
