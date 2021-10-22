@@ -5,7 +5,8 @@
     <title>Смотреть дизайны квартир</title>
     <link rel="stylesheet" href="lib\css\style_header.css">
     <link rel="stylesheet" href="lib\css\style_footer.css">
-	  <link rel="stylesheet" href="lib\css\style_watch_designs.css">
+    <link rel="stylesheet" href="lib\css\style_watch_designs.css">
+	  <link rel="stylesheet" href="lib\css\style_filter.css">
 </head>
 <body>
   <div class="header_bg">
@@ -241,6 +242,48 @@
           <div class="pub_tags"></div>
         </div>
       </div>
+
+      <div class="pub_one">
+        <div class="img_from_pub">
+          <img src="images/slider-1/1.png" alt="">
+          <div class="img_black_gradient"> </div>
+        </div>
+        <div class="pub_info">
+          <p class="pub_title">Заголовок дизайн</p>
+          <div class="div_pub_text">
+            <p class="pub_text">С другой стороны укрепление и развитие структуры способствует подготовки и реализации модели развития. Задача организации, в особенности же реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач.</p>
+          </div>
+          <div class="pub_to_do">
+            <form class="user_just_saved_it" action="user_just_saved_it.py" method="post">
+              <img src="sources/SVG/heart.svg" alt="">
+              <input class="user_just_saved_it_smbt" type="submit" name="to_save_the_pub" value="В «Избранное»">
+            </form>
+            <a class="pub_show_full" href="">Подробнее •••</a>
+          </div>
+          <div class="pub_tags"></div>
+        </div>
+      </div>
+
+      <div class="pub_one">
+        <div class="img_from_pub">
+          <img src="images/slider-1/2.png" alt="">
+          <div class="img_black_gradient"> </div>
+        </div>
+        <div class="pub_info">
+          <p class="pub_title">Заголовок дизайн</p>
+          <div class="div_pub_text">
+            <p class="pub_text">С другой стороны укрепление и развитие структуры способствует подготовки и реализации модели развития. Задача организации, в особенности же реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач.</p>
+          </div>
+          <div class="pub_to_do">
+            <form class="user_just_saved_it" action="user_just_saved_it.py" method="post">
+              <img src="sources/SVG/heart.svg" alt="">
+              <input class="user_just_saved_it_smbt" type="submit" name="to_save_the_pub" value="В «Избранное»">
+            </form>
+            <a class="pub_show_full" href="">Подробнее •••</a>
+          </div>
+          <div class="pub_tags"></div>
+        </div>
+      </div>
   </div>
 
   <div class="opened_filter_big_bg">
@@ -249,7 +292,6 @@
         <p class="opened_filter_title">Фильтры для публикаций</p>
         <div class="opened_filter_under_title">
           <p class="opened_filter_second_title">349 подобрано</p>
-
         </div>
         <div class="filter_mini_div bringed_pubs">
           <div class="filter_one">
@@ -294,15 +336,124 @@
         </div>
         <div class="filter_mini_div cost">
           <p class="opened_filter_text full_width">Бюджет, ₽</p>
-          <input type="number" name="cost_mini" value="" placeholder="0">
+          <input type="number" name="cost_mini" value="" placeholder="0" pattern="[0-9]+([\.,][0-9]+)?">
           <p style="font-size: 15px; font-weight: 900;">-</p>
           <input type="number" name="cost_biggest" value="" placeholder="15 000 000">
-          <input type="range" min="0" max="100" step="1" value="50">
+          <!-- <input type="range" min="0" max="100" step="1" value="50"> -->
+        </div>
+        <div class="filter_mini_div color"> <p class="opened_filter_text full_width" style="margin-bottom: 9px;">3 основных цвета: <span id="checked_colors_count">выбрано 0</span></p>
+          <div class="color_panel">
+            <input id="color_1_inp" class="color_input color_1" type="text" name="color_1" value="color 1">
+            <input id="color_2_inp" class="color_input color_2" type="text" name="color_2" value="color 2">
+            <input id="color_3_inp" class="color_input color_3" type="text" name="color_3" value="color 3">
+            <ul class="cp">
+              <li class="cp__color" id="c_ffa500"></li>
+              <li class="cp__color" id="c_e8a52b"></li>
+              <li class="cp__color" id="c_cc9a3e"></li>
+              <li class="cp__color" id="c_a08555"></li>
+              <li class="cp__color" id="c_7e673d"></li>
+              <li class="cp__color" id="c_845808"></li>
+              <li class="cp__color" id="c_5a3b03"></li>
+              <li class="cp__color" id="c_c8a76a"></li>
+              <li class="cp__color" id="c_e0b76c"></li>
+
+              <li class="cp__color" id="c_ffff00"></li>
+              <li class="cp__color" id="c_e2e21e"></li>
+              <li class="cp__color" id="c_b6b625"></li>
+              <li class="cp__color" id="c_a0a02b"></li>
+              <li class="cp__color" id="c_727224"></li>
+              <li class="cp__color" id="c_989800"></li>
+              <li class="cp__color" id="c_62620d"></li>
+              <li class="cp__color" id="c_b6b663"></li>
+              <li class="cp__color" id="c_e6e681"></li>
+
+              <li class="cp__color" id="c_ff0000"></li>
+              <li class="cp__color" id="c_ff3030"></li>
+              <li class="cp__color" id="c_d23030"></li>
+              <li class="cp__color" id="c_b83737"></li>
+              <li class="cp__color" id="c_962e2e"></li>
+              <li class="cp__color" id="c_ca4242"></li>
+              <li class="cp__color" id="c_903131"></li>
+              <li class="cp__color" id="c_ce5b5b"></li>
+              <li class="cp__color" id="c_fa7e7e"></li>
+
+              <li class="cp__color" id="c_ff006a"></li>
+              <li class="cp__color" id="c_ff3589"></li>
+              <li class="cp__color" id="c_ca2f6f"></li>
+              <li class="cp__color" id="c_b22c64"></li>
+              <li class="cp__color" id="c_84224b"></li>
+              <li class="cp__color" id="c_b81b5d"></li>
+              <li class="cp__color" id="c_821342"></li>
+              <li class="cp__color" id="c_d64784"></li>
+              <li class="cp__color" id="c_f46aa5"></li>
+
+              <li class="cp__color" id="c_008000"></li>
+              <li class="cp__color" id="c_1e941e"></li>
+              <li class="cp__color" id="c_197019"></li>
+              <li class="cp__color" id="c_155c15"></li>
+              <li class="cp__color" id="c_0f440f"></li>
+              <li class="cp__color" id="c_267626"></li>
+              <li class="cp__color" id="c_185218"></li>
+              <li class="cp__color" id="c_268026"></li>
+              <li class="cp__color" id="c_40bc40"></li>
+
+              <li class="cp__color" id="c_0000ff"></li>
+              <li class="cp__color" id="c_2424ff"></li>
+              <li class="cp__color" id="c_2626c6"></li>
+              <li class="cp__color" id="c_1d1d8e"></li>
+              <li class="cp__color" id="c_17176e"></li>
+              <li class="cp__color" id="c_2a2a9a"></li>
+              <li class="cp__color" id="c_1a1a7c"></li>
+              <li class="cp__color" id="c_2323ca"></li>
+              <li class="cp__color" id="c_4646dc"></li>
+
+              <li class="cp__color" id="c_00ffe7"></li>
+              <li class="cp__color" id="c_24f5ff"></li>
+              <li class="cp__color" id="c_26c6c6"></li>
+              <li class="cp__color" id="c_1d898e"></li>
+              <li class="cp__color" id="c_17626e"></li>
+              <li class="cp__color" id="c_2a959a"></li>
+              <li class="cp__color" id="c_1a787c"></li>
+              <li class="cp__color" id="c_23c2ca"></li>
+              <li class="cp__color" id="c_46d5dc"></li>
+
+              <li class="cp__color" id="c_800080"></li>
+              <li class="cp__color" id="c_ae00ae"></li>
+              <li class="cp__color" id="c_981498"></li>
+              <li class="cp__color" id="c_7e1d7e"></li>
+              <li class="cp__color" id="c_521352"></li>
+              <li class="cp__color" id="c_862a86"></li>
+              <li class="cp__color" id="c_6c0d6c"></li>
+              <li class="cp__color" id="c_a216a2"></li>
+              <li class="cp__color" id="c_ac52ac"></li>
+
+              <li class="cp__color" id="c_000000"></li>
+              <li class="cp__color" id="c_1f1f1f"></li>
+              <li class="cp__color" id="c_707070"></li>
+              <li class="cp__color" id="c_313131"></li>
+              <li class="cp__color" id="c_a0a0a0"></li>
+              <li class="cp__color" id="c_cecece"></li>
+              <li class="cp__color" id="c_e8e8e8"></li>
+              <li class="cp__color" id="c_ffffff"></li>
+              <li class="cp__color" id="c_f2f2f2"></li>
+
+              <li class="cp__color active none1 none">x</li>
+              <li class="cp__color active none2 none">x</li>
+              <li class="cp__color active none3 none">x</li>
+            </ul>
+          </div>
+          <!-- <input type="color" name="bg" value="#ff0000">
+          <input type="color" list="color" value="#cc0000">
+          <datalist id="color">
+            <option value="#ff0000" >
+            <option value="#006600">
+            <option value="#000066">
+          </datalist> -->
         </div>
         <div class="filter_mini_div style"> <p class="opened_filter_text">По основному стилю:</p> </div>
-        <div class="filter_mini_div color"> <p class="opened_filter_text">По основному цвету: </p> </div>
         <div class="filter_mini_div user_feedbacks"> <p class="opened_filter_text">По активности пользователей:</p> </div>
-        <input class="filter_mini_div filter_to_filter" type="button" name="to_filter" value="Отфильтровать публикации">
+        <div class="filter_mini_div filter_other"> <p class="opened_filter_text">Прочее:</p> </div>
+        <input class="filter_mini_div filter_to_filter" type="button" name="to_filter" value="Показать подобранные">
       </form>
     </div>
 
@@ -347,7 +498,7 @@
 
   <script src="lib/js/jQuery-3.6.0.js"></script>
   <script src="lib/js/to-open-and-close-in-header.js"></script>
-  <script src="lib/js/jQuery-3.6.0.js"></script>
   <script src="lib/js/from-footer-to-notifications.js"></script>
+  <script src="lib/js/color_filter.js"></script>
 </body>
 </html>
