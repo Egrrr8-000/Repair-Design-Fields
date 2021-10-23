@@ -342,13 +342,17 @@
           <!-- <input type="range" min="0" max="100" step="1" value="50"> -->
         </div>
         <div class="filter_mini_div color">
-          <p class="opened_filter_text full_width" style="margin-bottom: 9px;">3 основных цвета:
-            <span class="checked_colors_container">
-              <span class="checked_colors_div checked_color_1" id="zero_none"></span>
-              <span class="checked_colors_div checked_color_2"></span>
-              <span class="checked_colors_div checked_color_3"></span>
+          <p class="opened_filter_text full_width big_p">
+            <span class="big_p_parth">
+              3 основных цвета:
+              <span id="checked_colors_count" class="checked_colors_count">Любые</span>
+              <span class="checked_colors_container">
+                <span class="checked_colors_div checked_color_1" id="zero_none"></span>
+                <span class="checked_colors_div checked_color_2"></span>
+                <span class="checked_colors_div checked_color_3"></span>
+              </span>
             </span>
-            <span id="checked_colors_count" class="checked_colors_count">Любые</span>
+            <span> <button type="button" name="button" class="triangle_to_open_and_hide open_hide_colors"> <img src="sources/SVG/to_close_open_triangle.svg" alt=""> </button> </span>
           </p>
           <div class="color_panel">
             <input id="color_1_inp" class="color_input color_1" type="text" name="color_1" value="">
@@ -470,11 +474,15 @@
           </div>
         </div>
         <div class="filter_mini_div checked_styles">
-          <div class="styles_labels_title">
-            <p class="opened_filter_text">По основному стилю:</p>
-            <button type="button" name="button"> <img src="sources/SVG/to_close_open_triangle.svg" alt=""> </button>
-          </div>
+          <p class="opened_filter_text full_width big_p">
+            <span class="big_p_parth">
+              Основной стиль:
+              <span id="checked_styles_count" class="checked_styles_count">Любые</span>
+            </span>
+            <span> <button type="button" name="button" class="triangle_to_open_and_hide open_hide_design_styles"> <img src="sources/SVG/to_close_open_triangle.svg" alt=""> </button> </span>
+          </p>
           <div class="styles_labels_open">
+            <label class="any_one"> <span> <input type="checkbox" name="style_design" value="any_one" > </span><span>Любой стиль</span> </label>
             <label> <span> <input id="skandinavskiy_style" type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Скандинавский</span> </label>
             <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Прованс</span> </label>
             <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Классика</span> </label>
