@@ -477,13 +477,15 @@
           <p class="opened_filter_text full_width big_p">
             <span class="big_p_parth">
               Основной стиль:
-              <span id="checked_styles_count" class="checked_styles_count">Любые</span>
+              <span id="checked_styles_count" class="checked_styles_count">Любой</span>
             </span>
             <span> <button type="button" name="button" class="triangle_to_open_and_hide open_hide_design_styles"> <img src="sources/SVG/to_close_open_triangle.svg" alt=""> </button> </span>
           </p>
           <div class="styles_labels_open">
-            <label class="any_one"> <span> <input type="checkbox" name="style_design" value="any_one" > </span><span>Любой стиль</span> </label>
-            <label> <span> <input id="skandinavskiy_style" type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Скандинавский</span> </label>
+            <div class="styles_any_one_label">
+              <label> <span> <input id="skandinavskiy_style" type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Скандинавский</span> </label>
+              <label class="any_one" style="max-width: 99px;"> <span> <input type="checkbox" name="style_design" value="any_one"> </span><span class="any_one__span">Любой стиль</span> </label>
+            </div>
             <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Прованс</span> </label>
             <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Классика</span> </label>
             <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Лофт</span> </label>
@@ -504,7 +506,32 @@
             <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Деконструктивизм</span> </label>
           </div>
         </div>
-        <div class="filter_mini_div user_feedbacks"> <p class="opened_filter_text">По активности пользователей:</p> </div>
+        <div class="filter_mini_div checked_rooms">
+          <p class="opened_filter_text full_width big_p">
+            <span class="big_p_parth">
+              Комната:
+              <span id="checked_rooms_count" class="checked_rooms_count">Любая</span>
+            </span>
+            <span> <button type="button" name="button" class="triangle_to_open_and_hide open_hide_checked_rooms"> <img src="sources/SVG/to_close_open_triangle.svg" alt=""> </button> </span>
+          </p>
+          <div class="checked_rooms_open">
+            <div class="check_any_one_room">
+              <label> <span> <input id="skandinavskiy_style" type="checkbox" name="checked_room" value="kitchen" > </span><span>Кухня</span> </label>
+              <label class="any_one" style="max-width: 118px;"> <span> <input type="checkbox" name="checked_room" value="any_one"> </span><span class="any_one__span">Любая комната</span> </label>
+            </div>
+            <label> <span> <input type="checkbox" name="checked_room" value="skandinavskiy" > </span><span>Туалет</span> </label>
+            <label> <span> <input type="checkbox" name="checked_room" value="skandinavskiy" > </span><span>Ванная</span> </label>
+            <label> <span> <input type="checkbox" name="checked_room" value="skandinavskiy" > </span><span>Гостинная</span> </label>
+            <label> <span> <input type="checkbox" name="checked_room" value="skandinavskiy" > </span><span>Спальня</span> </label>
+            <label> <span> <input type="checkbox" name="checked_room" value="skandinavskiy" > </span><span>Личная комната</span> </label>
+            <label> <span> <input type="checkbox" name="checked_room" value="skandinavskiy" > </span><span>Коридор</span> </label>
+            <label> <span> <input type="checkbox" name="checked_room" value="skandinavskiy" > </span><span>Балкон</span> </label>
+            <label> <span> <input type="checkbox" name="checked_room" value="skandinavskiy" > </span><span>Прихожая</span> </label>
+            <label> <span> <input type="checkbox" name="checked_room" value="skandinavskiy" > </span><span>Офис</span> </label>
+            <label> <span> <input type="checkbox" name="checked_room" value="skandinavskiy" > </span><span>Другое</span> </label>
+          </div>
+        </div>
+        <!-- <div class="filter_mini_div user_feedbacks"> <p class="opened_filter_text">СОРТИРОВАТЬ, НАПРИМЕР По активности пользователей:</p> </div> -->
         <div class="filter_mini_div filter_other"> <p class="opened_filter_text">Дополнительно:</p> </div>
         <input class="filter_mini_div filter_to_filter" type="button" name="to_filter" value="Показать подобранные">
       </form>
