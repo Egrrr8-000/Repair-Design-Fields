@@ -537,3 +537,20 @@
 .any_one input {
   display: none;
 }
+
+.filter_to_filter {
+  width: 100%;
+    height: 25px;
+    padding: 0 27%;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    background: #d1d1d1;
+    color: #3c3c3c;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0;
+}
+.filter_to_filter:hover {
+  background: #ebebeb;
+}
