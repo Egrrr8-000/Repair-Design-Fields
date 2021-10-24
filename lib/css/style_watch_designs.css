@@ -91,6 +91,7 @@ button, input[type="submit"] {
     z-index: 11;
     width: 100%;
     max-width: 330px;
+    height: 500px;
     max-height: 94%;
     overflow: auto;
     background: white;
