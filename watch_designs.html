@@ -125,7 +125,7 @@
             <p class="dont_close_on_click">Отфильтровать</p>
           </div>
           <div class="filter_tags_count dont_close_on_click">
-            <p class="dont_close_on_click">6</p>
+            <p id="tags_count" class="dont_close_on_click">6</p>
           </div>
         </div>
       </button>
@@ -296,20 +296,27 @@
           </div>
           <div class="filter_mini_div bringed_pubs">
             <div class="filters_on">
-              <div class="filter_one fltr_cost">
-                 <p>Фильтер 1</p>
+              <div class="filter_one" id="fltr_cost">
+                 <p id="fltr_cost_p">Фильтер бюджет</p>
                  <div class="to_close_filter"></div>
               </div>
-              <div class="filter_one fltr_color">
-                 <p>Фильтер 2</p>
+              <div class="filter_one" id="fltr_color">
+                 <!-- фильтер цвет -->
+                 <p>
+                   <span class="checked_colors_container">
+                     <span class="checked_colors_div checked_color_1" id="zero_none"></span>
+                     <span class="checked_colors_div checked_color_2"></span>
+                     <span class="checked_colors_div checked_color_3"></span>
+                   </span>
+                 </p>
                  <div class="to_close_filter"></div>
               </div>
-              <div class="filter_one fltr_style">
-                 <p>Фильтер 3</p>
+              <div class="filter_one" id="fltr_style">
+                 <p id="fltr_style_p">Фильтер выбранный стиль</p>
                  <div class="to_close_filter"></div>
               </div>
-              <div class="filter_one fltr_room">
-                 <p>Фильтер 4</p>
+              <div class="filter_one" id="fltr_room">
+                 <p id="fltr_room_p">Фильтер выбранная комната</p>
                  <div class="to_close_filter"></div>
               </div>
               <input class="clear_filter" type="button" name="clear_filter" value="Очистить все фильтры">
@@ -320,9 +327,9 @@
           </div>
           <div class="filter_mini_div cost">
             <p class="opened_filter_text full_width">Бюджет, ₽</p>
-            <input type="number" name="cost_mini" value="" placeholder="0" pattern="[0-9]+([\.,][0-9]+)?">
+            <input id="fltr_cost_min" type="number" name="cost_mini" value="" placeholder="0" pattern="[0-9]+([\.,][0-9]+)?">
             <p style="font-size: 15px; font-weight: 900;">-</p>
-            <input type="number" name="cost_max" value="" placeholder="15 000 000">
+            <input id="fltr_cost_max" type="number" name="cost_max" value="" placeholder="15 000 000">
             <!-- <input type="range" min="0" max="100" step="1" value="50"> -->
           </div>
           <div class="filter_mini_div color">
@@ -467,27 +474,27 @@
             </p>
             <div class="styles_labels_open">
               <div class="styles_any_one_label">
-                <label> <span> <input id="skandinavskiy_style" type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Скандинавский</span> </label>
+                <label> <span> <input id="skandinavskiy_style" type="checkbox" name="style_design" value="Скандинавский" > </span><span>Скандинавский</span> </label>
                 <label class="any_one" style="max-width: 99px;"> <span> <input type="checkbox" name="style_design" value="any_one"> </span><span class="any_one__span">Любой стиль</span> </label>
               </div>
-              <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Прованс</span> </label>
-              <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Классика</span> </label>
-              <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Лофт</span> </label>
-              <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Авангард</span> </label>
-              <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Американский стиль</span> </label>
-              <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Ампир</span> </label>
-              <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Английский стиль</span> </label>
-              <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Античный стиль</span> </label>
-              <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Ар деко (арт деко)</span> </label>
-              <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Ар нуво (арт нуво)</span> </label>
-              <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Арабский стиль</span> </label>
-              <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Гжель</span> </label>
-              <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Голландский стиль</span> </label>
-              <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Готический стиль</span> </label>
-              <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Гранж</span> </label>
-              <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Греческий стиль</span> </label>
-              <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Датский стиль</span> </label>
-              <label> <span> <input type="checkbox" name="style_design" value="skandinavskiy" > </span><span>Деконструктивизм</span> </label>
+              <label> <span> <input type="checkbox" name="style_design" value="Прованс" > </span><span>Прованс</span> </label>
+              <label> <span> <input type="checkbox" name="style_design" value="Классика" > </span><span>Классика</span> </label>
+              <label> <span> <input type="checkbox" name="style_design" value="Лофт" > </span><span>Лофт</span> </label>
+              <label> <span> <input type="checkbox" name="style_design" value="Авангард" > </span><span>Авангард</span> </label>
+              <label> <span> <input type="checkbox" name="style_design" value="Американский стиль" > </span><span>Американский стиль</span> </label>
+              <label> <span> <input type="checkbox" name="style_design" value="Ампир" > </span><span>Ампир</span> </label>
+              <label> <span> <input type="checkbox" name="style_design" value="Английский стиль" > </span><span>Английский стиль</span> </label>
+              <label> <span> <input type="checkbox" name="style_design" value="Античный стиль" > </span><span>Античный стиль</span> </label>
+              <label> <span> <input type="checkbox" name="style_design" value="Ар деко (арт деко)" > </span><span>Ар деко (арт деко)</span> </label>
+              <label> <span> <input type="checkbox" name="style_design" value="Ар нуво (арт нуво)" > </span><span>Ар нуво (арт нуво)</span> </label>
+              <label> <span> <input type="checkbox" name="style_design" value="Арабский стиль" > </span><span>Арабский стиль</span> </label>
+              <label> <span> <input type="checkbox" name="style_design" value="Гжель" > </span><span>Гжель</span> </label>
+              <label> <span> <input type="checkbox" name="style_design" value="Голландский стиль" > </span><span>Голландский стиль</span> </label>
+              <label> <span> <input type="checkbox" name="style_design" value="Готический стиль" > </span><span>Готический стиль</span> </label>
+              <label> <span> <input type="checkbox" name="style_design" value="Гранж" > </span><span>Гранж</span> </label>
+              <label> <span> <input type="checkbox" name="style_design" value="Греческий стиль" > </span><span>Греческий стиль</span> </label>
+              <label> <span> <input type="checkbox" name="style_design" value="Датский стиль" > </span><span>Датский стиль</span> </label>
+              <label> <span> <input type="checkbox" name="style_design" value="Деконструктивизм" > </span><span>Деконструктивизм</span> </label>
             </div>
           </div>
           <div class="filter_mini_div checked_rooms">
@@ -503,16 +510,16 @@
                 <label> <span> <input id="skandinavskiy_style" type="checkbox" name="checked_room" value="kitchen" > </span><span>Кухня</span> </label>
                 <label class="any_one" style="max-width: 118px;"> <span> <input type="checkbox" name="checked_room" value="any_one"> </span><span class="any_one__span">Любая комната</span> </label>
               </div>
-              <label> <span> <input type="checkbox" name="checked_room" value="skandinavskiy" > </span><span>Туалет</span> </label>
-              <label> <span> <input type="checkbox" name="checked_room" value="skandinavskiy" > </span><span>Ванная</span> </label>
-              <label> <span> <input type="checkbox" name="checked_room" value="skandinavskiy" > </span><span>Гостинная</span> </label>
-              <label> <span> <input type="checkbox" name="checked_room" value="skandinavskiy" > </span><span>Спальня</span> </label>
-              <label> <span> <input type="checkbox" name="checked_room" value="skandinavskiy" > </span><span>Личная комната</span> </label>
-              <label> <span> <input type="checkbox" name="checked_room" value="skandinavskiy" > </span><span>Коридор</span> </label>
-              <label> <span> <input type="checkbox" name="checked_room" value="skandinavskiy" > </span><span>Балкон</span> </label>
-              <label> <span> <input type="checkbox" name="checked_room" value="skandinavskiy" > </span><span>Прихожая</span> </label>
-              <label> <span> <input type="checkbox" name="checked_room" value="skandinavskiy" > </span><span>Офис</span> </label>
-              <label> <span> <input type="checkbox" name="checked_room" value="skandinavskiy" > </span><span>Другое</span> </label>
+              <label> <span> <input type="checkbox" name="checked_room" value="Туалет" > </span><span>Туалет</span> </label>
+              <label> <span> <input type="checkbox" name="checked_room" value="Ванная" > </span><span>Ванная</span> </label>
+              <label> <span> <input type="checkbox" name="checked_room" value="Гостинная" > </span><span>Гостинная</span> </label>
+              <label> <span> <input type="checkbox" name="checked_room" value="Спальня" > </span><span>Спальня</span> </label>
+              <label> <span> <input type="checkbox" name="checked_room" value="Личная комната" > </span><span>Личная комната</span> </label>
+              <label> <span> <input type="checkbox" name="checked_room" value="Коридор" > </span><span>Коридор</span> </label>
+              <label> <span> <input type="checkbox" name="checked_room" value="Балкон" > </span><span>Балкон</span> </label>
+              <label> <span> <input type="checkbox" name="checked_room" value="Прихожая" > </span><span>Прихожая</span> </label>
+              <label> <span> <input type="checkbox" name="checked_room" value="Офис" > </span><span>Офис</span> </label>
+              <label> <span> <input type="checkbox" name="checked_room" value="Другое" > </span><span>Другое</span> </label>
             </div>
           </div>
           <!-- <div class="filter_mini_div user_feedbacks"> <p class="opened_filter_text">СОРТИРОВАТЬ, НАПРИМЕР По активности пользователей:</p> </div> -->
