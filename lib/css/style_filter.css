@@ -1,3 +1,31 @@
+.filters_on {
+  display: none;
+  transition: all 0.2s;
+  flex-wrap: wrap;
+}
+.filters_on.show, .filter_one.show {
+  display: flex;
+}
+
+.filters_off {
+  display: inherit;
+    transition: all 0.2s;
+    width: 100%;
+    margin: 15px 0;
+}
+.filters_off.hidden {
+  display: none;
+}
+.filter_one {
+  display: none;
+  transition: all 0.2s;
+}
+.filters_off p {
+  font-family: 'Open Sans';
+  font-size: 15px;
+  margin: 0 auto;
+}
+
 .big_p {
   margin-bottom: 9px;
     display: flex;
@@ -51,6 +79,7 @@
 
 .color_panel, .styles_labels_open, .checked_rooms {
   transition: all 0.2s;
+  width: 100%;
 }
 
 .styles_labels_open, .checked_rooms_open {
@@ -137,9 +166,9 @@
 }
 
 .cp {
+  width: 96%;
   display: flex;
     flex-wrap: wrap;
-    max-width: 310px;
     justify-content: space-between;
     background: #f0f0f0;
     padding: 3px 3px 0;
@@ -148,7 +177,7 @@
 }
 
 .cp__color {
-  width: 31px;
+  width: 11.11%;
     height: 21px;
     background-color: #CCC;
     border: 2px solid transparent;
@@ -540,16 +569,25 @@
 
 .show_pubs  {
   padding-top: 10px;
-    padding-left: 5px;
+    padding-left: 6px;
+    padding-right: 5px;
     bottom: -5px;
     left: 12px;
     border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 30px;
+    border-bottom-right-radius: 10px;
     position: absolute;
-    width: 94%;
+    width: 88%;
     height: 40px;
-    background: #fff;
+    background: #ffffff;
 }
+
+.show_pubs_container {
+  display: flex;
+    justify-content: flex-start;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
 .clear_hix_show_pubs {
   width: 95%;
   height: 30px;
@@ -557,7 +595,7 @@
 
 .filter_to_filter {
   height: 25px;
-    padding: 0 25%;
+    padding: 0 26%;
     font-size: 14px;
     border: none;
     border-radius: 6px;

@@ -16,7 +16,7 @@
   float: left;
 }
 
-button, input[type="submit"] {
+.button_and_submit__without__bgn_and_border {
   background: none;
   border: none;
 }
