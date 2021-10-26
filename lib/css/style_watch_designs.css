@@ -1,9 +1,9 @@
 .filter_and_gradient {
-  background: linear-gradient(180deg, rgba(242, 242, 242, 0.85) -0.55%, rgba(242, 242, 242, 0) 100%);
+  /* background: linear-gradient(180deg, rgba(242, 242, 242, 0.85) -0.55%, rgba(242, 242, 242, 0) 100%); */
   width: 100%;
   height: 65px;
-  position: sticky;
-  top: 50px;
+  position: fixed;
+    top: 50px;
   display: flex;
   justify-content: center;
   z-index: 8;
@@ -29,7 +29,7 @@
   align-content: center;
   justify-content: flex-end;
   transition: all 0.4s ease;
-  margin: 10px 15px 0 0;
+  margin: 10px 0 0 0;
 }
 
 .filter.tags_count_showed {
@@ -87,11 +87,22 @@
   color: #FFFFFF;
 }
 
+.pre_pre_opened_filter {
+  height: 90%;
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .pre__opened_filter {
-  position: fixed;
-    right: 10%;
-    top: 65px;
-    max-height: 78.5%;
+  /*position: fixed;*/
+  /*  right: 10%;*/
+  /*  top: 65px;*/
+  margin-right: -30px;
+    max-height: 94%;
     height: 670px;
     width: 30%;
     max-width: 372px;
@@ -104,9 +115,7 @@
 .opened_filter {
   border: 4px solid #fff;
     z-index: 11;
-    width: 100%;
     max-width: 330px;
-    height: 500px;
     max-height: 94%;
     overflow: auto;
     background: white;
@@ -251,12 +260,11 @@
 }
 
 .page_title {
-  width: 80%;
-  max-width: 1100px;
-  margin: 15px auto 0px;
-  top: -60px;
-  position: relative;
-  z-index: 9;
+	height: 50px;
+    width: 80%;
+    max-width: 1100px;
+    margin: 15px auto 15px;
+    z-index: 9;
 }
 .title_p {
   font-family: "Open Sans", sans-serif;
@@ -294,9 +302,8 @@ input::-webkit-inner-spin-button {
 }
 
 .close_btn {
-  position: absolute;
-  right: 6%;
-  top: 32px;
+  position: relative;
+  right: -6%;
   cursor: pointer;
   width: 30px;
   height: 30px;

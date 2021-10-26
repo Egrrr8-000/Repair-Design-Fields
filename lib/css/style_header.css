@@ -102,11 +102,11 @@
     padding: 13px 2%;
     letter-spacing: 0.065em;
     color: #FFFFFF;
-    transition: all 0.4s ease;
+    transition: background-color 0.4s;
 }
 
 .not_heart:hover {
-    background: #383636;
+    background-color: #383636;
 }
 
 .saved_heart {
