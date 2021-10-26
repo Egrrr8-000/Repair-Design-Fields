@@ -255,7 +255,7 @@
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    border: 1px solid #FFFFFF;
+    /* border: 1px solid #FFFFFF; */
     overflow: hidden;
     margin: 5px 0;
 }
@@ -271,7 +271,7 @@
 }
 
 .avatar_container.show_avtr_optns .avatar_options,
-.notifications_container.show_ntfctns_more .notifications_opened {
+.notifications_container.show_ntfctns_more .bg_notifications_opened>.notifications_opened {
     z-index: 69;
     visibility: visible;
     opacity: 1;
@@ -313,16 +313,27 @@
 
 .notifications_mini p {
     background: #BE0D0D;
-    padding: 1px 5px;
+    padding: 1px 5px 2px;
     border-radius: 8px;
     filter: drop-shadow(0px 0px 9px #BE0D0D);
     margin: -16px 0 0 -20px;
 }
 
+.bg_notifications_opened  {
+  position: absolute;
+  z-index: -10;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .notifications_opened {
   width: 40%;
   max-width: 400px;
-  height: 1000%;
+  height: 1150%;
   overflow: auto;
   position: absolute;
   right: 10%;
@@ -364,12 +375,12 @@
     padding: 10px 15px;
     color: #999595;
     font-size: 14px;
-    border-top: 2px solid #545151;
+    /* border-top: 2px solid #545151; */
 }
 
 .notification_one {
     padding: 15px;
-    border-top: 2px solid #545151;
+    /* border-top: 2px solid #545151; */
     transition: all 0.2s ease;
 }
 
@@ -422,7 +433,7 @@
     padding: 5px 0 10px;
     transition: all 0.4s ease;
     border: none;
-    border-top: 2px solid #545151;
+    /* border-top: 2px solid #545151; */
 }
 
 .show_more_noti:hover {
@@ -431,7 +442,6 @@
 }
 
 .more_notifications {
-  /* position: absolute; */
-    bottom: 0px;
-    width: 100%;
+  position: sticky;
+  bottom: 0;
 }
