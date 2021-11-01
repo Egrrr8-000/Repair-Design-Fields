@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Смотреть дизайны квартир</title>
+    <link rel="stylesheet" href="lib\css\style_hello_user.css">
     <link rel="stylesheet" href="lib\css\style_header.css">
     <link rel="stylesheet" href="lib\css\style_footer.css">
     <link rel="stylesheet" href="lib\css\style_watch_designs.css">
@@ -115,7 +116,24 @@
           </div>
         </div>
         <div class="user_didnt_log_in">
-
+          <button class="btn_udli login" type="button" name="login">Войти</button>
+          <button class="btn_udli signup" type="button" name="signup">Зарегистрироваться</button>
+          <div class="opened_filter_big_bg">
+            <div class="before_slides_auth">
+  						<h1 class="before_slides_form_zagolovok before_slides_ten">Авторизируйтесь,</h1>
+  						<p class="before_slides_form_podzagolovok before_slides_ten">чтобы свободно пользоваться всем функционалом системы</p>
+  						<div class="white_form_reg_auth_reset before_slides_ten">
+  							<form name="auth_form" method="post" action="try_to_auth.py">
+  								<input type="text" name="auth_input" placeholder="Телефон, почта или ник">
+  								<input type="password" name="auth_pass" placeholder="Пароль">
+  								<label class="podpis_na_forme" for="reset_pass" name="to_reset_pass">Забыл свой пароль...</label>
+  								<div class="submit_bs_form">  <input class="submit_bs_form_input" type="submit" name="start_auth" value="Войти" style="margin-bottom: 0px;">  </div>
+  							</form>
+  						</div>
+  						<p class="white_form_rar_podpis_1 before_slides_ten"><label for="reg" id="to_reg">Зарегистрироваться ›</label></p>
+  						<p class="white_form_rar_podpis_2 before_slides_ten">Пользуясь этой информационной системой, вы<br>соглашаетесь на <span><a href="#">условия конфиденциальности.</a></span></p>
+  					</div>
+          </div>
         </div>
     </div>
   </div>
@@ -525,7 +543,7 @@
       </div>
     </div>
 
-    <div class="close_btn"></div>
+    <!-- <div class="close_btn"></div> -->
   </div></div>
 
 	<div class="filter_and_gradient">
@@ -534,7 +552,7 @@
 			<div class="filter">
 			  <div class="filter_btn">
 				<img class="filter_logo dont_close_on_click" src="sources/SVG/filter_logo.svg" alt="">
-				<p class="dont_close_on_click">Отфильтровать</p>
+				<p class="filter_p dont_close_on_click">Отфильтровать</p>
 			  </div>
 			  <div class="filter_tags_count dont_close_on_click">
 				<p id="tags_count" class="dont_close_on_click">6</p>

@@ -31,9 +31,19 @@
   transition: all 0.4s ease;
   margin: 10px 0 0 0;
 }
+.filter_p, .filter_logo {
+  transition: all 0.4s ease;
+}
 
-.filter.user_scrolled {
-    margin: 10px 20px 0 0;
+.filter.user_scrolled, .filter.tags_count_showed.user_scrolled {
+    margin: 10px -80px 0 0;
+}
+.filter.user_scrolled .filter_p {
+    display: none;
+}
+.filter.user_scrolled .filter_logo {
+  margin-right: 0;
+  margin-left: 3px;
 }
 
 .filter.tags_count_showed {
@@ -49,7 +59,7 @@
   display: flex;
   transition: all 0.4s ease;
   cursor: pointer;
-  box-shadow: 0px 0px 20px #8d8787;
+  /* box-shadow: 0px 0px 20px #8d8787; */
 }
 .filter_btn.tags_count_showed {
   padding-right: 20px;
@@ -77,7 +87,7 @@
   background: #383636;
   border: 1.5px solid #FFFFFF;
   border-radius: 15px;
-  box-shadow: 0px 0px 20px #8D8787;
+  /* box-shadow: 0px 0px 20px #8D8787; */
   margin: -20px 0 0 -20px;
   display: none;
 }
@@ -307,7 +317,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.close_btn {
+/* .close_btn {
   position: relative;
   right: -6%;
   cursor: pointer;
@@ -321,7 +331,7 @@ input::-webkit-inner-spin-button {
 
 .close_btn:hover {
   opacity: 1;
-}
+} */
 
 .pubs_container {
   display: grid;
