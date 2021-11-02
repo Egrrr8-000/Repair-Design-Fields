@@ -487,3 +487,54 @@
 .btn_udli:hover {
   color: #fff;
 }
+
+.before_slides_form.header_restyle {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 50px;
+      left: 0;
+      background: rgb(22 21 21 / 88%);
+  display: none;
+  transition: 0.3s;
+  z-index: -8;
+}
+
+.before_slides_form.header_restyle.show {
+  display: inherit;
+  z-index: 5;
+}
+
+.before_slides_form_zagolovok.header_restyle {
+  padding-top: 3%;
+  font-size: 29px;
+    line-height: 70px;
+}
+
+.before_slides_form.header_restyle .before_slides_reg,
+.before_slides_form.header_restyle .before_slides_auth,
+.before_slides_form.header_restyle .before_slides_reset_pass {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.before_slides_form_podzagolovok.header_restyle {
+  font-size: 19px;
+}
+
+.white_form_reg_auth_reset.header_restyle input {
+  width: 97%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding-left: 2%;
+  border-radius: 16px;
+    font-size: 18px;
+}
+
+.white_form_reg_auth_reset.header_restyle input[type="submit"] {
+  font-size: 20px;
+}
+
+.white_form_rar_podpis_2.header_restyle a {
+  text-decoration: underline;
+}
