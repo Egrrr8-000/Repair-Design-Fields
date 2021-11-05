@@ -1,0 +1,9 @@
+DATABASES = {
+    'default' : {
+        'ENGINE' : 'django.db.backends.mysql',
+        'NAME' : 'EgorTodrDew$is_RepairDesignFields',
+        'USER' : 'EgorTodrDew',
+        'PASSWORD' : 'EgorTodrDew2EAACGc@',
+        'HOST' : 'EgorTodrDew.mysgl.pythonanywhere-services.com'
+    }
+}
