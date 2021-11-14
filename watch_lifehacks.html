@@ -181,38 +181,38 @@
   </div>
 
   <div class="pubs_container">
-    <div class="pub_one lifehack">
+    <div class="pub_one lifehack" id="1">
       <div class="media">
-        <img src="images/slider-1/9.png" alt="">
+        <img src="images/watch_lifehacks/1.jpg" alt="">
         <div class="img_black_gradient"> </div>
       </div>
 
       <div class="pub_info">
         <div class="pub_to_do">
-          <form class="user_just_saved_it" action="user_just_saved_it.py" method="post">
-            <img src="sources/SVG/heart.svg" alt="">
-            <input class="user_just_saved_it_smbt" type="submit" name="to_save_the_pub" value="В «Избранное»">
-          </form>
+          <div class="user_just_saved_it">
+            <a onclick="toggleSavePub(1)" title="Сохранить в «Избранное»"><img src="sources/SVG/heart.svg" alt=""></a>
+          </div>
           <div class="pub_author_cntnr">
             <div class="pub_author">
               <a href=""><img src="images/avatars/avatar-1.png" alt=""></a>
               <div class="nickname_and_role">
                 <div class="nickname">
                   <a href="">Алексей</a>
-                  <label>
-                    <input class="checkbox_get_noti" type="checkbox" name="get_noti" value="0">
-                    <div class="get_noti"></div>
-                    <div class="get_noti_label">Получать уведомления о новых записях Алексея</div>
-                  </label>
+                  <a onclick="toggleGetNotiFromAuthor(1)"> <div class="get_noti" title="Получать уведомления о новых записях Алексея"></div></a>
+                  <!-- <div class="get_noti_label">Получать уведомления о новых записях Алексея</div> -->
                 </div>
                 <p class="role">Автор публикации</p>
               </div>
             </div>
           </div>
-          <div class="pub_show_full" href="">•••</div>
-          <div class="pub_additional_functins">
-            <p>Подать жалобу</p>
-            <p>Искать похожее</p>
+          <a onclick="togglePubAdditionalFunctions(1)"><div class="pub_show_full">•••</div></a>
+          <div class="pub_additional_functions_bg">
+            <div class="pub_additional_functions dont_close_on_click">
+              <p class="dont_close_on_click" onclick="openNewComplaintForm(1)">Подать жалобу</p>
+              <form class="" method="post">
+                <input type="submit" class="dont_close_on_click" value="Искать похожее">
+              </form>
+            </div>
           </div>
         </div>
         <div class="div_pub_text">
@@ -239,38 +239,38 @@
       </div>
     </div>
 
-    <div class="pub_one lifehack">
+    <div class="pub_one lifehack" id="2">
       <div class="media">
-        <img src="images/slider-1/11.png" alt="">
+        <img src="images/watch_lifehacks/99.gif" alt="">
         <div class="img_black_gradient"> </div>
       </div>
 
       <div class="pub_info">
         <div class="pub_to_do">
-          <form class="user_just_saved_it" action="user_just_saved_it.py" method="post">
-            <img src="sources/SVG/heart.svg" alt="">
-            <input class="user_just_saved_it_smbt" type="submit" name="to_save_the_pub" value="В «Избранное»">
-          </form>
+          <div class="user_just_saved_it">
+            <a onclick="toggleSavePub(2)" title="Сохранить в «Избранное»"><img src="sources/SVG/heart.svg" alt=""></a>
+          </div>
           <div class="pub_author_cntnr">
             <div class="pub_author">
               <a href=""><img src="images/avatars/avatar-1.png" alt=""></a>
               <div class="nickname_and_role">
                 <div class="nickname">
                   <a href="">Алексей</a>
-                  <label>
-                    <input class="checkbox_get_noti" type="checkbox" name="get_noti" value="0">
-                    <div class="get_noti"></div>
-                    <div class="get_noti_label">Получать уведомления о новых записях Алексея</div>
-                  </label>
+                  <a onclick="toggleGetNotiFromAuthor(2)"> <div class="get_noti" title="Получать уведомления о новых записях Алексея"></div></a>
+                  <!-- <div class="get_noti_label">Получать уведомления о новых записях Алексея</div> -->
                 </div>
                 <p class="role">Автор публикации</p>
               </div>
             </div>
           </div>
-          <div class="pub_show_full" href="">•••</div>
-          <div class="pub_additional_functins">
-            <p>Подать жалобу</p>
-            <p>Искать похожее</p>
+          <a onclick="togglePubAdditionalFunctions(2)"><div class="pub_show_full">•••</div></a>
+          <div class="pub_additional_functions_bg">
+            <div class="pub_additional_functions dont_close_on_click">
+              <p class="dont_close_on_click" onclick="openNewComplaintForm(2)">Подать жалобу</p>
+              <form class="" method="post">
+                <input type="submit" class="dont_close_on_click" value="Искать похожее">
+              </form>
+            </div>
           </div>
         </div>
         <div class="div_pub_text">
@@ -297,42 +297,41 @@
       </div>
     </div>
 
-    <div class="pub_one lifehack">
+    <div class="pub_one lifehack" id="3">
       <div class="media">
-        <img src="images/slider-1/10.png" alt="">
+        <video class="paused" muted="muted" controls="controls">
+          <source src="images/watch_lifehacks/Как из обычного жидкого акрила сделать из кафеля произведение искусства.mp4" type='video/mp4;'>
+          Тег video не поддерживается вашим браузером. Увы.
+        </video>
         <div class="img_black_gradient"> </div>
       </div>
 
       <div class="pub_info">
         <div class="pub_to_do">
-          остановился на анимации сохранения публикации
-          <label>
-            <input type="checkbox" name="user_just_saved_it" id="88">
-            <div class="user_just_saved_it" action="user_just_saved_it.py" method="post">
-              <img src="sources/SVG/heart.svg" alt="">
-              <input class="user_just_saved_it_smbt" type="submit" name="to_save_the_pub" value="В «Избранное»">
-            </div>
-          </label>
+          <div class="user_just_saved_it">
+            <a onclick="toggleSavePub(3)" title="Сохранить в «Избранное»"><img src="sources/SVG/heart.svg" alt=""></a>
+          </div>
           <div class="pub_author_cntnr">
             <div class="pub_author">
               <a href=""><img src="images/avatars/avatar-1.png" alt=""></a>
               <div class="nickname_and_role">
                 <div class="nickname">
                   <a href="">Алексей</a>
-                  <label>
-                    <input class="checkbox_get_noti" type="checkbox" name="get_noti" value="0">
-                    <div class="get_noti"></div>
-                    <div class="get_noti_label">Получать уведомления о новых записях Алексея</div>
-                  </label>
+                  <a onclick="toggleGetNotiFromAuthor(3)"> <div class="get_noti" title="Получать уведомления о новых записях Алексея"></div></a>
+                  <!-- <div class="get_noti_label">Получать уведомления о новых записях Алексея</div> -->
                 </div>
                 <p class="role">Автор публикации</p>
               </div>
             </div>
           </div>
-          <div class="pub_show_full" href="">•••</div>
-          <div class="pub_additional_functins">
-            <p>Подать жалобу</p>
-            <p>Искать похожее</p>
+          <a onclick="togglePubAdditionalFunctions(3)"><div class="pub_show_full">•••</div></a>
+          <div class="pub_additional_functions_bg">
+            <div class="pub_additional_functions dont_close_on_click">
+              <p class="dont_close_on_click" onclick="openNewComplaintForm(3)">Подать жалобу</p>
+              <form class="" method="post">
+                <input type="submit" class="dont_close_on_click" value="Искать похожее">
+              </form>
+            </div>
           </div>
         </div>
         <div class="div_pub_text">
@@ -629,6 +628,14 @@
 		  </button>
 		</div>
 	  </div>
+
+  <div class="new_complaint">
+    <h1>Жалоба на публикацию</h1>
+    <form>
+      <textarea name="" id="" cols="30" rows="10" title="Напишите, в чём суть жалобы" placeholder="Напишите, в чём суть жалобы. Мы рассмотрим Вашу жалобу и что-нибудь решим, обязательно уведомив о результате вас."></textarea>
+      <input type="submit" value="Отправить жалобу" onclick="new_complaint_was_sent">
+    </form>
+  </div>
 
   <div class="footer_bg">
     <div class="footer">
