@@ -465,8 +465,11 @@ input::-webkit-inner-spin-button {
 }
 
 .user_just_saved_it {
-  background: linear-gradient(0deg, rgba(22, 21, 21, 0.5), rgba(22, 21, 21, 0.5)), radial-gradient(82.88% 1513.02% at 8.1% 50%, #BE0D0D 0%, rgba(151, 25, 70, 0.65) 31.25%, rgba(99, 38, 109, 0.28) 61.46%, rgba(8, 16, 46, 0.22) 93.23%), rgba(0, 0, 0, 0.66);
+  background: linear-gradient(0deg, rgb(22 21 21 / 82%), rgb(22 21 21 / 26%)), radial-gradient(82.88% 1513.02% at 8.1% 50%, #BE0D0D 0%, rgb(137 0 49 / 78%) 31.25%, rgb(66 0 76 / 78%) 61.46%, rgba(8, 16, 46, 0.22) 93.23%), rgba(0, 0, 0, 0.66);
   transition: all 0.3s ease;
+}
+.user_just_saved_it.pub_saved {
+  background: linear-gradient(0deg, rgb(22 21 21 / 23%), rgb(22 21 21 / 76%)), radial-gradient(82.88% 1513.02% at 8.1% 50%, #d20000 0%, rgb(151 25 70) 31.25%, rgb(72 0 84 / 64%) 61.46%, #3f51b5 93.23%), rgb(18 56 169 / 66%);
 }
 .user_just_saved_it:hover  {
   background: linear-gradient(0deg, rgba(22, 21, 21, 0.2), rgba(22, 21, 21, 0.2)), radial-gradient(82.88% 1513.02% at 8.1% 50%, #BE0D4D 0%, rgba(151, 25, 108, 0.65) 31.25%, rgba(38, 54, 109, 0.28) 61.46%, rgba(8, 16, 46, 0.22) 93.23%), rgba(26, 7, 7, 0.66);
