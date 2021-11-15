@@ -6,7 +6,7 @@
     top: 50px;
   display: flex;
   justify-content: center;
-  /* z-index: 8; */
+  z-index: 8;
 }
 .filter_and_gradient_container {
   width: 80%;

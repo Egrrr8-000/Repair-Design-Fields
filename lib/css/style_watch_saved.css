@@ -1,0 +1,17 @@
+.pub_one.lifehack {
+  background: hsl(0deg 0% 95%);
+    border: 1px solid #8f8b8b;
+}
+.pub_one.lifehack .media {
+  border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.pub_one.lifehack .pub_tag {
+  background: #d5d5d5;
+}
+.pub_one.lifehack .pub_tag.use_all {
+  background: #7d7d7d;
+}
+.pub_one.lifehack .pub_tag:hover {
+  background: #dbdbdb;
+}
