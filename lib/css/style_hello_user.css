@@ -207,7 +207,7 @@ input[name="r"], input[name="openned_form"] {
     grid-column: 1;
     grid-row: 1;
     max-height: 500px;
-    min-height: 400px;
+    /* min-height: 400px; */
     height: 100%;
     min-width: 100%;
 }
