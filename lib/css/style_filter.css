@@ -39,15 +39,20 @@
     align-items: center;
 }
 
-#checked_colors_count, #checked_styles_count, #checked_rooms_count {
+#checked_colors_count,
+#checked_styles_count,
+#checked_rooms_count,
+#checked_spheres_count {
   color: #5c535c;
     font-family: 'Roboto';
     transition: all 0.2s;
+    margin-left: 5px;
 }
 
-.checked_colors_count, .checked_styles_count, .checked_rooms_count {
-  margin-left: 5px;
-}
+.checked_colors_count,
+.checked_styles_count,
+.checked_rooms_count,
+.checked_rooms_count { }
 
 .checked_colors_container {
   display: inline-flex;
@@ -82,7 +87,9 @@
   width: 100%;
 }
 
-.styles_labels_open, .checked_rooms_open {
+.styles_labels_open,
+.checked_rooms_open,
+.spheres_labels_open {
   display: flex;
     opacity: 1;
     width: 100%;
@@ -94,7 +101,9 @@
     flex-wrap: wrap;
 }
 
-.styles_any_one_label, .check_any_one_room {
+.styles_any_one_label,
+.check_any_one_room,
+.spheres_any_one_label {
   width: 100%;
     display: flex;
     justify-content: space-between;
@@ -117,21 +126,39 @@
     align-items: flex-start;
 }
 
-.styles_labels_open label, .checked_rooms_open label {
+.styles_labels_open label,
+.checked_rooms_open label,
+.spheres_labels_open label {
   width: 100%;
     cursor: pointer;
     font-size: 15px;
     color: #3f3f3f;
     transition: all 0.3s ease;
 }
+label#author_style_design {
+  padding: 0 2px;
+  background: #e6d6b3;
+  border: 1px solid #a3926e;
+  color: #584d35;
+  border-radius: 4px;
+  margin: 2px 0 0;
+}
+label#author_style_design:hover {
+  color: #302a1d;
+}
 
-.checked_styles label:hover, .checked_rooms label:hover, .any_one__span:hover {
+
+.checked_styles label:hover,
+.checked_rooms label:hover,
+.spheres_labels_open label:hover,
+.any_one__span:hover {
   color: #000;
 }
 
 .color_panel.hidden,
 .styles_labels_open.hidden,
-.checked_rooms_open.hidden {
+.checked_rooms_open.hidden,
+.spheres_labels_open.hidden {
   opacity: 0;
     height: 0px;
     display: none;
@@ -152,7 +179,8 @@
 .triangle_to_open_and_hide:hover img,
 .triangle_to_open_and_hide.color_panel_hidden img,
 .triangle_to_open_and_hide.styles_labels_hidden img,
-.triangle_to_open_and_hide.checked_rooms_open_hidden img {
+.triangle_to_open_and_hide.checked_rooms_open_hidden img,
+.triangle_to_open_and_hide.spheres_labels_hidden img {
   transform: rotate(-90deg);
 }
 
