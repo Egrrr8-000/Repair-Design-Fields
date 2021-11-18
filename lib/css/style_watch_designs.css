@@ -189,7 +189,7 @@
 .opened_filter_title {
   font-weight: bold;
   font-size: 20px;
-  letter-spacing: 0.015em;
+  /* letter-spacing: 0.015em; */
   text-align: center;
 }
 
