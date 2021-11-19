@@ -1,3 +1,7 @@
+.pub_id {
+  display: none;
+}
+
 .preview {
   width: 100%;
     height: 400px;
@@ -223,6 +227,8 @@
 
 .nickname_and_role .nickname a{
   color: #000;
+  max-width: 100px;
+    overflow: hidden;
 }
 .nickname_and_role .role {
   color: #0000009e;

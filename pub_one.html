@@ -175,6 +175,9 @@
   </div>
   <div class="header_clear_hix"> <!-- чтобы под хэдэр ничего не попадало --> </div>
 
+  <div class="pub_id" id="1"></div>
+  <div class="opened_filter" style="display:none"></div><!-- в header присутствует проверка на ховер, и без этого блока весь js ломается -->
+
   <div class="preview">
     <div class="preview_cntnr">
       <p class="title">Новая квартира в стиле Лофт</p>
@@ -220,7 +223,7 @@
 
     <div class="pub_to_do">
       <div class="user_just_saved_it">
-        <a onclick="toggleSavePub_LH(1)" title="Сохранить в «Избранное»"><img src="sources/SVG/heart.svg" alt="">
+        <a onclick="toggleSavePub_D(1)" title="Сохранить в «Избранное»"><img src="sources/SVG/heart.svg" alt="">
         <input class="user_just_saved_it_smbt" type="submit" name="to_save_the_pub" value="В «Избранное»"></a>
       </div>
       <div class="pub_author_cntnr">
@@ -328,6 +331,6 @@
   <script src="lib/js/jQuery-3.6.0.js"></script>
   <script src="lib/js/header-animation.js"></script>
   <script src="lib/js/from-footer-to-notifications.js"></script>
-  <script src="lib/js/animation-lifehacks.js"></script>
+  <script src="lib/js/animation-pub-one.js"></script>
 </body>
 </html>
