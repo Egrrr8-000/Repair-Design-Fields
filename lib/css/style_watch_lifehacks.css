@@ -220,7 +220,7 @@
   background-size: 30px 30px;
 }
 
-.nickname_and_role .nickname a{
+.nickname_and_role .nickname .nickname_link {
   color: #000;
   max-width: 150px;
     overflow: hidden;
