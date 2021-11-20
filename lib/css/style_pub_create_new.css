@@ -94,3 +94,10 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: gray;
 }
+
+.filter_mini_div {
+  display: none;
+}
+.filter_mini_div.show {
+  display: flex;
+}
