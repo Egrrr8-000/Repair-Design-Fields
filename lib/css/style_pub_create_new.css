@@ -3,6 +3,70 @@
   display: none;
 }
 
+.pubs_container h4 {
+  margin-bottom: 5px;
+  letter-spacing: 0;
+  font-size: 21px;
+}
+.pub_inp_one {
+  font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.065em;
+    margin: 0 0 27px;
+}
+.pub_inp_one h4 {
+  margin-bottom: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 3px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+label:hover {
+  opacity: 1;
+}
+input {
+  margin-right: 10px;
+}
+
+.roles_and_tags {
+  display: flex;
+  margin: 0 0 20px;
+}
+.pub_roles,
+.pub_tags {
+  width: 30%;
+}
+.at_first_choose_the_pub_role,
+.pub_inp_one p {
+  opacity: 0.8;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+.pub_inp_one p {
+  font-size: 14px;
+  line-height: 24px;
+  width: 45%;
+}
+.pub_inp_one textarea {
+  width: 40%;
+  height: 100px;
+  padding: 5px 10px;
+}
+
+.pub_title input {
+  width: 40%;
+  padding: 5px 10px;
+}
+
+
+
+
+
 .functions_for_author_and_admin {
   padding: 5px 0;
     border-radius: 15px;

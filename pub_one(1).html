@@ -176,7 +176,7 @@
   <div class="header_clear_hix"> <!-- чтобы под хэдэр ничего не попадало --> </div>
 
   <div class="pub_id" id="2"></div>
-  <div class="opened_filter" style="display:none"></div><!-- в header присутствует проверка на ховер, и без этого блока весь js ломается -->
+  <div class="opened_filter"></div><!-- в header присутствует проверка на ховер, и без этого блока весь js ломается -->
 
   <div class="preview" style="background: url(images/repairs/20-11-2021/14.jpg);">
     <div class="preview_cntnr">
@@ -295,8 +295,20 @@
     </form>
   </div>
   <div class="share_the_pub"> <!-- скопировать ссылку на публикацию -->
-    <h1>Ссылка на публикацию: </h1>
+    <h1>Ссылка на публикацию:</h1>
     <p>repairandfields.com/ru/search?pubId=99</p>
+  </div>
+  <div class="functions_for_author_and_admin"> <!-- действия для автора и админа -->
+    <a onclick="user_tried_to_delete()"><p id="delete">Удалить</p></a>
+    <a href="edit_the_pub.py?idPub=99"><p id="edit">Редактировать</p></a>
+  </div>
+  <div class="delete_the_pub"> <!-- подтверждение удаление публикации -->
+    <h1>Вы точно хотите удалить публикацию?</h1>
+    <p style="margin: 20px 0;">Нельзя будет восстаноить её.</p>
+    <div class="cancel_or_delete">
+      <p id="cancel_deleting">Отмена</p>
+      <p onclick="really_delete()" id="delete">Удалить публикацию</p>
+    </div>
   </div>
 
   <div class="footer_bg">

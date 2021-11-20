@@ -2,12 +2,12 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Новая квартира в стиле Лофт — Смотреть дизайны</title>
+    <title>Создать новую публикацию</title>
     <link rel="stylesheet" href="lib\css\style_hello_user.css">
     <link rel="stylesheet" href="lib\css\style_header.css">
     <link rel="stylesheet" href="lib\css\style_footer.css">
     <link rel="stylesheet" href="lib\css\style_watch_designs.css">
-    <link rel="stylesheet" href="lib\css\style_pub_one.css">
+    <link rel="stylesheet" href="lib\css\style_pub_create_new.css">
     <link rel="stylesheet" href="lib\css\style_filter.css">
 </head>
 <body>
@@ -178,99 +178,50 @@
   <div class="pub_id" id="1"></div>
   <div class="opened_filter" style="display:none"></div><!-- в header присутствует проверка на ховер, и без этого блока весь js ломается -->
 
-  <div class="preview">
-    <div class="preview_cntnr">
-      <p class="title">Новая квартира в стиле Лофт</p>
-    </div>
+  <div class="page_title">
+      <p class="title_p">Создать новую публикацию</p>
   </div>
 
   <div class="pubs_container">
-    <p class="description">
-      Новая квартира в стиле Лофт. В гостиной расположен камин, стол-книжка и большой диван, 2 спальни, 3 полноценных санузла.
-      Один из них - с окном в пол (для наблюдения за рассветом или закатом).
-      Квартира полностью укомплектована всем необходимым для комфортного проживания: бытовая техника, посуда, постельное белье, полотенца.
-      Дом имеет свою котельную, что гарантирует низкие коммунальные платежи.
-      Окна на восток, вид на город, во дворе дома собственная парковка.
-      Рядом торговые центры, кинотеатр, кафе.
-    </p>
-
-    <img src="images/designs/20-11-2021/2.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/3.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/4.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/5.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/6.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/7.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/8.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/9.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/10.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/11.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/12.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/13.jpg" alt="" class="pub_img">
-
-    <p class="description">
-      Новая квартира в стиле Лофт - от студии дизайна интерьеров Damiani.
-      Квартира площадью 100 кв.м в современном стиле располагается на 2-м этаже кирпичного дома в районе Старая Деревня.
-      В квартире очень необычная планировка: кухня-гостиная, 2 спальни, 1 санузел, гардеробная, балкон.
-      Из окон квартиры открываются прекрасные виды на Неву и панораму города.
-      Дизайн выполнен в светлых тонах, с использованием натуральных материалов (дерево, камень, текстиль) и обилием естественного света.
-      Новая квартира в стиле Лофт. В гостиной расположен камин, стол-книжка и большой диван, 2 спальни, 3 полноценных санузла.
-      Один из них - с окном в пол (для наблюдения за рассветом или закатом).
-      Квартира полностью укомплектована всем необходимым для комфортного проживания: бытовая техника, посуда, постельное белье, полотенца.
-      Дом имеет свою котельную, что гарантирует низкие коммунальные платежи.
-      Окна на восток, вид на город, во дворе дома собственная парковка.
-      Рядом торговые центры, кинотеатр, кафе.
-    </p>
-
-    <div class="pub_to_do">
-      <div class="user_just_saved_it">
-        <a onclick="toggleSavePub_D(1)" title="Сохранить в «Избранное»"><img src="sources/SVG/heart.svg" alt="">
-        <input class="user_just_saved_it_smbt" type="submit" name="to_save_the_pub" value="В «Избранное»"></a>
+    <form class="" action="index.html" method="post">
+      <div class="pub_title pub_inp_one">
+        <h4>Заголовок публикации:</h4>
+        <input type="text" name="pub_title" id="" placeholder="Введите короткий интересный заголовок">
+        <p>Максимальная длина текста — 135 символов.</p>
       </div>
-      <div class="pub_author_cntnr">
-        <div class="pub_author">
-          <a href=""><img src="images/avatars/avatar-1.png" alt=""></a>
-          <div class="nickname_and_role">
-            <div class="nickname">
-              <a href="" class="nickname_link">Алексей</a>
-              <a onclick="toggleGetNotiFromAuthor(1)" class="nickname_noti"> <div class="get_noti" title="Получать уведомления о новых записях пользователя Алексей"></div></a>
-              <!-- <div class="get_noti_label">Получать уведомления о новых записях Алексея</div> -->
-            </div>
-            <p class="role">Автор публикации</p>
-          </div>
+      <div class="pub_preview pub_inp_one">
+        <h4>Превью публикации:</h4>
+        <input type="file" name="pub_preview" id="" accept="image/*" title="Загрузите превью публикации">
+        <p>Идеальный размер изображения — 1350×405 пикселей.<br>С другими размерами фото может некорректно отображаться.</p>
+      </div>
+      <div class="pub_description pub_inp_one">
+        <h4>Описание публикации перед фотографиями:</h4>
+        <textarea name="pub_description" id="1" placeholder="Сдеайте текстовое описание Вашей публикации. Расскажите о важном." title="Сдеайте текстовое описание Вашей публикации. Расскажите о важном."></textarea>
+        <p>Сдеайте текстовое описание Вашей публикации. Расскажите о важном в выбранной теме, упомяните используемые фото.</p>
+      </div>
+      <div class="pub_photos pub_inp_one">
+        <h4>Фотографии публикации:</h4>
+        <input type="file" name="pub_photos" id="pub_photos" multiple accept="image/*" title="Загрузите фотографии по теме публикации">
+        <p>Идеальный размер изображения — 1100×580 пикселей. С другими размерами фото могут некорректно отображаться.</p>
+      </div>
+      <div class="pub_description pub_inp_one">
+        <h4>Описание публикации после фотографий:</h4>
+        <textarea name="pub_description" id="2" placeholder="Сдеайте текстовое описание Вашей публикации. Расскажите о важном." title="Сдеайте текстовое описание Вашей публикации. Расскажите о важном."></textarea>
+        <p>Сдеайте вывод по теме Вашей публикации. Можно пожелать хорошего настроения :3</p>
+      </div>
+      <div class="roles_and_tags">
+        <div class="pub_roles">
+          <h4>Вид публикации:</h4>
+          <label><input checked type="radio" name="pub_role" id="repair">Ремонт</label>
+          <label><input type="radio" name="pub_role" id="design">Дизайн</label>
+          <label><input type="radio" name="pub_role" id="lifehack">Лайфхаки</label>
+        </div>
+        <div class="pub_tags">
+          <h4>Тэги публикации:</h4>
+          <div class="the_pub_role_chosen"></div> <!-- если выбрана роль публикации -->
         </div>
       </div>
-      <a onclick="togglePubAdditionalFunctions(1)"><div class="pub_show_full">•••</div></a>
-    </div>
-
-    <div class="pub_tags_container">
-      <div class="pub_tag" id="cost">
-        <p>Бюджет: до 100000₽</p>
-        <img src="sources/SVG/search.svg" alt="">
-      </div>
-      <div class="pub_tag" id="color">
-        <p>Цвета:
-          <span class="checked_colors_container">
-            <span class="checked_colors_div checked_color_1 checked_color" id="c_267626"></span>
-            <span class="checked_colors_div checked_color_2 checked_color" id="c_ffa500"></span>
-            <span class="checked_colors_div checked_color_3 checked_color" id="c_962e2e"></span>
-          </span>
-        </p>
-        <img src="sources/SVG/search.svg" alt="">
-      </div>
-      <div class="pub_tag" id="style">
-        <p>Стиль: Лофт</p>
-        <img src="sources/SVG/search.svg" alt="">
-      </div>
-      <div class="pub_tag" id="style">
-        <p>Комната: Вся квартира</p>
-        <img src="sources/SVG/search.svg" alt="">
-      </div>
-      <div class="pub_tag use_all">
-        <p>Публикации по всем этим тегам</p>
-        <img src="sources/SVG/filter_logo.svg" alt="">
-      </div>
-    </div>
-
+    </form>
   </div>
 
   <div class="pub_additional_functions_bg"> <!-- доп функции с публикацией -->
@@ -278,29 +229,6 @@
       <p class="dont_close_on_click" onclick="openNewComplaintForm()">Подать жалобу</p>
       <p class="dont_close_on_click" onclick="searchPubsLikeThis()" title="найти публикации-лайфхаки с такими же тэгами, как и эта публикция">Искать похожее</p>
       <p class="dont_close_on_click" onclick="shareThePub()">Поделиться</p>
-    </div>
-  </div>
-  <div class="new_complaint"> <!-- написать жалобу -->
-    <h1>Жалоба на публикацию</h1>
-    <form>
-      <textarea name="" id="" cols="30" rows="10" title="Напишите, в чём суть жалобы" placeholder="Напишите, в чём суть жалобы. Мы рассмотрим Вашу жалобу и что-нибудь решим, обязательно уведомив о результате вас."></textarea>
-      <input type="submit" value="Отправить жалобу" onclick="new_complaint_was_sent">
-    </form>
-  </div>
-  <div class="share_the_pub"> <!-- скопировать ссылку на публикацию -->
-    <h1>Ссылка на публикацию: </h1>
-    <p>repairandfields.com/ru/search?pubId=99</p>
-  </div>
-  <div class="functions_for_author_and_admin"> <!-- действия для автора и админа -->
-    <a onclick="user_tried_to_delete()"><p id="delete">Удалить</p></a>
-    <a href="edit_the_pub.py?idPub=99"><p id="edit">Редактировать</p></a>
-  </div>
-  <div class="delete_the_pub"> <!-- подтверждение удаление публикации -->
-    <h1>Вы точно хотите удалить публикацию?</h1>
-    <p style="margin: 20px 0;">Нельзя будет восстаноить её.</p>
-    <div class="cancel_or_delete">
-      <p id="cancel_deleting">Отмена</p>
-      <p onclick="really_delete()" id="delete">Удалить публикацию</p>
     </div>
   </div>
 
@@ -343,6 +271,6 @@
   <script src="lib/js/jQuery-3.6.0.js"></script>
   <script src="lib/js/header-animation.js"></script>
   <script src="lib/js/from-footer-to-notifications.js"></script>
-  <script src="lib/js/animation-pub-one.js"></script>
+  <script src="lib/js/animation-pub-create-new.js"></script>
 </body>
 </html>
