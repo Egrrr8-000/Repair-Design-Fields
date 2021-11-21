@@ -59,14 +59,16 @@ input {
   width: 45%;
 }
 .pub_inp_one textarea {
-  width: 40%;
+  width: 38%;
   height: 100px;
   padding: 5px 10px;
 }
 
 .pub_title input {
   width: 40%;
-  padding: 5px 10px;
+      display: block;
+      padding: 5px 10px;
+      margin: 0 10px 5px 0;
 }
 
 .pub_roles,
