@@ -53,6 +53,17 @@ input {
     letter-spacing: 0;
     font-weight: 400;
 }
+.pub_inp_one a {
+  letter-spacing: 0;
+  font-size: 16px;
+  margin-right: 5px;
+  color: #333;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.pub_inp_one a:hover {
+  color: #000;
+}
 .pub_inp_one p {
   font-size: 14px;
   line-height: 24px;
@@ -102,4 +113,46 @@ input[type="submit"]:hover {
 }
 .filter_mini_div.show {
   display: flex;
+}
+
+/* для настроек пользователя, на кого чел подписан: */
+.user_one {
+  display: flex;
+  align-items: flex-start;
+}
+.user_one .user_link {
+  width: 35%;
+  margin: 0 0 20px;
+  padding: 0 0 0 20px;
+  display: flex;
+    align-items: center;
+    color: #333;
+}
+.user_one .user_link:hover {
+  color: #000;
+  background: #f5f5f5;
+}
+.user_one .user_photo {
+  margin: 0 10px 0 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid gray;
+}
+p.cancel_following {
+  cursor: pointer;
+  color: #300;
+  padding: 5px 10px;
+    margin: 10px 0 0;
+    width: auto;
+    border-radius: 10px;
+}
+p.cancel_following:hover {
+  background: #ffd6d6;
+}
+p.cancel_following.dont_cancel {
+  color: #003;
+}
+p.cancel_following.dont_cancel:hover {
+  background: #d6e5ff;
 }
