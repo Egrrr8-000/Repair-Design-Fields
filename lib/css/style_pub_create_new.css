@@ -123,7 +123,7 @@ input[type="submit"]:hover {
 .user_one .user_link {
   width: 35%;
   margin: 0 0 20px;
-  padding: 0 0 0 20px;
+  /* padding: 0 0 0 20px; */
   display: flex;
     align-items: center;
     color: #333;

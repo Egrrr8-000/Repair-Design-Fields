@@ -1,0 +1,99 @@
+.pubs_container {
+  margin-top: 20px;
+}
+.photo_nickname_role_additionalFunctions {
+  display: flex;
+    align-items: center;
+    margin: 0 auto 0;
+}
+.user_photo {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #999;
+  border-radius: 100%;
+  margin: 0 20px 0 0;
+}
+.user_nikname {
+  font-size: 32px;
+}
+.user_role {
+  color: #555;
+  margin: 5px 0 0;
+}
+.photo_nickname_role_additionalFunctions .get_noti {
+    width: 30px;
+    height: 30px;
+    background: #838383;
+    margin-left: 30px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    opacity: 0.4;
+    background: url(../../sources/SVG/new_get_noti.svg);
+    background-size: 30px 30px;
+}
+.photo_nickname_role_additionalFunctions .get_noti:hover {
+    opacity: 1;
+}
+.additionalFunctions {
+  /* margin-left: 30px; */
+    color: #bfbfbf;
+    padding: 10px;
+    border-radius: 12px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    line-height: 10px;
+}
+.additionalFunctions:hover,
+.additionalFunctions.opened {
+  background: #424242;
+    color: #dbdbdb;
+}
+.bio {
+  margin: 0 auto 80px;
+    padding-left: 8%;
+    /* padding-right: 5%; */
+    width: 40%;
+}
+.expert_info_and_offer_and_contact_info {
+  display: flex;
+  margin-bottom: 60px;
+}
+.expert_info_and_offer {
+  width: 100%;
+      margin-right: 30px;
+}
+.offer,
+.expert_info {
+  margin: 0 0 30px 8%;
+    /* width: 60%; */
+    display: flex;
+    align-items: flex-start;
+}
+.expert_info h4,
+.offer h4 {
+  margin-right: 20px;
+    font-size: 32px;
+    color: #d1d1d1;
+}
+.offer_text,
+.expert_info p {
+  width: 80%;
+    text-align: justify;
+    margin-right: 10px;
+}
+.contact_info {
+  width: 30%;
+}
+.contact_info p {
+  display: flex;
+  margin-bottom: 10px;
+}
+.contact_info img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.author_pubs {
+  margin-bottom: 20px;
+}
