@@ -36,7 +36,7 @@
   transform: rotate(-90deg);
 }
 
-.user_one {} 
+.user_one {}
 .user_one .user_link {
   margin: 0 0 20px;
   padding: 0 0 0 20px;
@@ -54,4 +54,11 @@
     height: 50px;
     border-radius: 30px;
     border: 1px solid gray;
+}
+
+/* для FAQ */
+.answer {
+  width: 70%;
+    margin: 0 20px 20px;
+    text-align: justify;
 }

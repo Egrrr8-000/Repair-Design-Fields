@@ -2,13 +2,14 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Новая квартира в стиле Лофт — Смотреть дизайны</title>
+    <title>Помощь: готовые ответы</title>
     <link rel="stylesheet" href="lib\css\style_hello_user.css">
     <link rel="stylesheet" href="lib\css\style_header.css">
     <link rel="stylesheet" href="lib\css\style_footer.css">
     <link rel="stylesheet" href="lib\css\style_watch_designs.css">
-    <link rel="stylesheet" href="lib\css\style_pub_one.css">
-    <link rel="stylesheet" href="lib\css\style_filter.css">
+    <link rel="stylesheet" href="lib\css\style_watch_repairs.css">
+    <link rel="stylesheet" href="lib\css\style_watch_lifehacks.css">
+    <link rel="stylesheet" href="lib\css\style_search_results.css">
 </head>
 <body>
   <div class="header_bg">
@@ -175,101 +176,45 @@
   </div>
   <div class="header_clear_hix"> <!-- чтобы под хэдэр ничего не попадало --> </div>
 
-  <div class="pub_id" id="1"></div>
-  <div class="opened_filter" style="display:none"></div><!-- в header присутствует проверка на ховер, и без этого блока весь js ломается -->
+  <div class="ne_nuzhno_no_starum_skriptam_nuzhno" style="display:none;"> <!-- в header присутствует проверка на ховер, и без этого блока весь js ломается -->
+    <div class="pub_id" id="1"></div>
+    <div id="tags_count"></div>
+    <div id="fltr_cost_min"></div>
+    <div id="fltr_cost_max"></div>
+    <div id="fltr_cost_p"></div>
+    <div id="fltr_style_p"></div>
+    <div id="fltr_room_p"></div>
+    <div id="checked_styles_count"></div>
+    <div id="checked_rooms_count"></div>
+    <div class="opened_filter"></div>
+  </div>
 
-  <div class="preview">
-    <div class="preview_cntnr">
-      <p class="title">Новая квартира в стиле Лофт</p>
-    </div>
+
+  <div class="page_title" style="display: flex; justify-content: space-between;">
+      <p class="title_p" style="margin-bottom: 20px; ">Помощь: готовые ответы</p>
+      <p class="count_pubs" style="float: right; margin-top: 10px;"><a href="send_to_support.html" style="color: #262626; background: #ececec; padding: 5px; border-radius: 10px; font-size: 16px;">Обратиться в поддержку</a></p>
   </div>
 
   <div class="pubs_container">
-    <p class="description">
-      Новая квартира в стиле Лофт. В гостиной расположен камин, стол-книжка и большой диван, 2 спальни, 3 полноценных санузла.
-      Один из них - с окном в пол (для наблюдения за рассветом или закатом).
-      Квартира полностью укомплектована всем необходимым для комфортного проживания: бытовая техника, посуда, постельное белье, полотенца.
-      Дом имеет свою котельную, что гарантирует низкие коммунальные платежи.
-      Окна на восток, вид на город, во дворе дома собственная парковка.
-      Рядом торговые центры, кинотеатр, кафе.
-    </p>
-
-    <img src="images/designs/20-11-2021/2.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/3.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/4.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/5.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/6.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/7.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/8.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/9.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/10.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/11.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/12.jpg" alt="" class="pub_img">
-    <img src="images/designs/20-11-2021/13.jpg" alt="" class="pub_img">
-
-    <p class="description">
-      Новая квартира в стиле Лофт - от студии дизайна интерьеров Damiani.
-      Квартира площадью 100 кв.м в современном стиле располагается на 2-м этаже кирпичного дома в районе Старая Деревня.
-      В квартире очень необычная планировка: кухня-гостиная, 2 спальни, 1 санузел, гардеробная, балкон.
-      Из окон квартиры открываются прекрасные виды на Неву и панораму города.
-      Дизайн выполнен в светлых тонах, с использованием натуральных материалов (дерево, камень, текстиль) и обилием естественного света.
-      Новая квартира в стиле Лофт. В гостиной расположен камин, стол-книжка и большой диван, 2 спальни, 3 полноценных санузла.
-      Один из них - с окном в пол (для наблюдения за рассветом или закатом).
-      Квартира полностью укомплектована всем необходимым для комфортного проживания: бытовая техника, посуда, постельное белье, полотенца.
-      Дом имеет свою котельную, что гарантирует низкие коммунальные платежи.
-      Окна на восток, вид на город, во дворе дома собственная парковка.
-      Рядом торговые центры, кинотеатр, кафе.
-    </p>
-
-    <div class="pub_to_do">
-      <div class="user_just_saved_it">
-        <a onclick="toggleSavePub_D(1)" title="Сохранить в «Избранное»"><img src="sources/SVG/heart.svg" alt="">
-        <input class="user_just_saved_it_smbt" type="submit" name="to_save_the_pub" value="В «Избранное»"></a>
-      </div>
-      <div class="pub_author_cntnr">
-        <div class="pub_author">
-          <a href=""><img src="images/avatars/avatar-1.png" alt=""></a>
-          <div class="nickname_and_role">
-            <div class="nickname">
-              <a href="" class="nickname_link">Алексей</a>
-              <a onclick="toggleGetNotiFromAuthor(1)" class="nickname_noti"> <div class="get_noti" title="Получать уведомления о новых записях пользователя Алексей"></div></a>
-              <!-- <div class="get_noti_label">Получать уведомления о новых записях Алексея</div> -->
-            </div>
-            <p class="role">Автор публикации</p>
-          </div>
-        </div>
-      </div>
-      <a onclick="togglePubAdditionalFunctions(1)"><div class="pub_show_full">•••</div></a>
+    <p onclick="toggleShow('faq1')" class="result_type_container" id='faq1'>Как стать автором и делать свои публикации?
+      <span class="triangle_to_open_and_hide"><img src="sources/SVG/to_close_open_triangle.svg" alt=""></span> </p>
+    <div class="pubs_container_one_type show" id='faq1'>
+      <p class="answer">
+        Если у вас есть хороший опыт работы в дизайне квартир или ремонте квартир, то очень просто! Просто расскажите о себе, подав заявку на авторство по ссылке: /send_to_supprt.html
+        Иначе - к сожалению, автором не стать. Наша система стремится стать отличным сборником дизайнов и знаний о ремонте в одном доступном месте.
+        Поэтому принимаем на авторство только со стажем.
+      </p>
     </div>
 
-    <div class="pub_tags_container">
-      <div class="pub_tag" id="cost">
-        <p>Бюджет: до 100000₽</p>
-        <img src="sources/SVG/search.svg" alt="">
-      </div>
-      <div class="pub_tag" id="color">
-        <p>Цвета:
-          <span class="checked_colors_container">
-            <span class="checked_colors_div checked_color_1 checked_color" id="c_267626"></span>
-            <span class="checked_colors_div checked_color_2 checked_color" id="c_ffa500"></span>
-            <span class="checked_colors_div checked_color_3 checked_color" id="c_962e2e"></span>
-          </span>
-        </p>
-        <img src="sources/SVG/search.svg" alt="">
-      </div>
-      <div class="pub_tag" id="style">
-        <p>Стиль: Лофт</p>
-        <img src="sources/SVG/search.svg" alt="">
-      </div>
-      <div class="pub_tag" id="style">
-        <p>Комната: Вся квартира</p>
-        <img src="sources/SVG/search.svg" alt="">
-      </div>
-      <div class="pub_tag use_all">
-        <p>Публикации по всем этим тегам</p>
-        <img src="sources/SVG/filter_logo.svg" alt="">
-      </div>
+    <p onclick="toggleShow('faq2')" class="result_type_container" id="faq2">Почему здесь есть 3 вида публикаций?
+      <span class="triangle_to_open_and_hide"><img src="sources/SVG/to_close_open_triangle.svg" alt=""></span> </p>
+    <div class="pubs_container_one_type show" id="faq2">
+      <p class="answer">
+        Это удобно: вы хотите подобрать для своей квартиры дизайн и понять, как правильно сделать отделку?
+        Разграничение публикаций на ремонт, дизайн и лайфхаки позовляет не запутаться в большом потоке новых данных.
+      </p>
     </div>
+
 
   </div>
 
@@ -291,28 +236,7 @@
     <h1>Ссылка на публикацию: </h1>
     <p>repairandfields.com/ru/search?pubId=99</p>
   </div>
-  <div class="functions_for_author_and_admin"> <!-- действия для автора и админа -->
-    <a onclick="open_statistics()"><p id="statistics">Статистика</p></a>
-    <a onclick="user_tried_to_delete()"><p id="delete">Удалить</p></a>
-    <a href="edit_the_pub.py?idPub=99"><p id="edit">Редактировать</p></a>
-  </div>
-  <div class="statistics"> <!-- посмотреть статистику по публикации -->
-    <h1>Статистика по публикации:</h1>
-    <p>Просмотров: <span>99</span></p>
-    <p>Сохранений: <span>99</span></p>
-    <p>Средний возраст всех просмотревших: <span>99</span></p>
-    <p>Средний возраст только сохранивших: <span>99</span></p>
-    <p>"Поделиться" нажато раз: <span>99</span></p>
-    <p>Жалоб на публикацию: <span>99</span></p>
-  </div>
-  <div class="delete_the_pub"> <!-- подтверждение удаление публикации -->
-    <h1>Вы точно хотите удалить публикацию?</h1>
-    <p style="margin: 20px 0;">Нельзя будет восстаноить её.</p>
-    <div class="cancel_or_delete">
-      <p id="cancel_deleting">Отмена</p>
-      <p onclick="really_delete()" id="delete">Удалить публикацию</p>
-    </div>
-  </div>
+
 
   <div class="footer_bg">
     <div class="footer">
@@ -353,6 +277,6 @@
   <script src="lib/js/jQuery-3.6.0.js"></script>
   <script src="lib/js/header-animation.js"></script>
   <script src="lib/js/from-footer-to-notifications.js"></script>
-  <script src="lib/js/animation-pub-one.js"></script>
+  <script src="lib/js/animation-search-results.js"></script>
 </body>
 </html>
