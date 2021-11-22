@@ -34,14 +34,21 @@
 .photo_nickname_role_additionalFunctions .get_noti:hover {
     opacity: 1;
 }
+.get_noti.noties_gotten {
+    opacity: 1;
+    background: blue;
+    background: url(../../sources/SVG/done_get_noti.svg);
+    background-size: 30px 30px;
+}
 .additionalFunctions {
   /* margin-left: 30px; */
-    color: #bfbfbf;
-    padding: 10px;
-    border-radius: 12px;
-    transform: rotate(90deg);
-    cursor: pointer;
-    line-height: 10px;
+  color: #989898;
+  padding: 10px;
+  border-radius: 12px;
+  transform: rotate(90deg);
+  cursor: pointer;
+  line-height: 10px;
+  font-size: 23px;
 }
 .additionalFunctions:hover,
 .additionalFunctions.opened {
@@ -53,6 +60,13 @@
     padding-left: 8%;
     /* padding-right: 5%; */
     width: 40%;
+}
+.user_doesnt_have_bio {
+  color: #b7b7b7;
+    font-style: italic;
+    background: #f5f5f5;
+    padding: 5px;
+    border-radius: 5px;
 }
 .expert_info_and_offer_and_contact_info {
   display: flex;
@@ -74,6 +88,7 @@
   margin-right: 20px;
     font-size: 32px;
     color: #d1d1d1;
+    width: 121px;
 }
 .offer_text,
 .expert_info p {
@@ -83,6 +98,11 @@
 }
 .contact_info {
   width: 30%;
+    background: #f3f3f3;
+    border-radius: 25px;
+    border: 1px solid #c3c3c3;
+    padding: 20px;
+    margin: -20px;
 }
 .contact_info p {
   display: flex;
