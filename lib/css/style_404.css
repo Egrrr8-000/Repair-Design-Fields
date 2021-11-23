@@ -6,7 +6,8 @@
     line-height: 40px;
     color: #161515;
     margin: 20px auto;
-    width: 44%;
+    display: flex;
+    justify-content: center;
 }
 
 .links {
