@@ -31,6 +31,9 @@ table th.with200px,
 table td.with200px {
   min-width: 200px;
 }
+table td.width350px {
+  min-width: 300px;
+}
 table th.functions {
     position: sticky;
     left: 0;
@@ -55,11 +58,13 @@ table td.photo_and_nickname img {
   margin-right: 10px;
 }
 table td.photo_and_nickname a,
-table td.following a {
+table td.following a,
+.preview_and_pub_name a {
   color: #000;
 }
 table td.photo_and_nickname a:hover,
-table td.following a:hover {
+table td.following a:hover,
+.preview_and_pub_name a:hover {
   text-decoration: underline;
 }
 table td.following {
@@ -100,6 +105,21 @@ table td.following a {
 table tr:hover td {
   background: #f5f4eb;
 }
+
+.preview_and_pub_name {
+  display: flex;
+  align-items: center;
+}
+
+.preview {
+  max-width: 100px;
+  margin-right: 10px;
+}
+
+table td.following ul.overflowX_auto {
+  overflow-x: auto;
+}
+
 
 
 .result_type_container {
@@ -170,4 +190,18 @@ table tr:hover td {
   width: 70%;
     margin: 0 20px 20px;
     text-align: justify;
+}
+
+/*print_report*/
+.print_report {
+  padding: 5px 10px;
+  margin: 0 0 20px;
+  background: #0D0C0C;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 100px;
+}
+.print_report:hover {
+  background: gray;
 }
