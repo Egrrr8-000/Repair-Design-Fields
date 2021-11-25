@@ -491,3 +491,56 @@ input.user_just_saved_it_smbt {
   background: none;
   border: none;
 }
+
+
+/* for index.html */
+.h1_index {
+  margin: 20px auto;
+}
+.variants {
+  display: flex;
+  margin: 0 0 100px;
+}
+.variant_one {
+  width: 33%;
+}
+.variant_one_img {
+  width: 340px;
+    height: 340px;
+    border-radius: 100%;
+    margin: 20px auto;
+}
+.variant_one_img#repair {
+  background: url(../../images/watch_repairs/2.jpeg);
+  background-size: 360px;
+    background-position: center;
+}
+.variant_one_img#design {
+  background: url(../../images/slider-1/9.png);
+  background-size: 360px;
+    background-position: center;
+}
+.variant_one_img#lifehacks {
+  background: url(../../images/watch_lifehacks/95.png);
+  background-size: 390px;
+    background-position: center;
+}
+.variant_one h4 {
+  margin: 10px 0;
+    text-align: center;
+}
+.variant_one p {
+  width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+.variant_one a {
+  color: #444;
+    display: block;
+    margin: 10px 0 0;
+    text-align: center;
+}
+.variant_one a:hover {
+  color: #000;
+  text-decoration: underline;
+}
